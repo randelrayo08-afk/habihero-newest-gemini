@@ -1,0 +1,186 @@
+[gd_scene format=3 uid="uid://r6eq1cb3coe6"]
+
+[ext_resource type="Texture2D" uid="uid://nfes0x6cy2vq" path="res://JOURNAL.png" id="1_ksg52"]
+[ext_resource type="FontFile" uid="uid://dmk3n2bih3tjs" path="res://Poppins-Black.ttf" id="2_e23pa"]
+[ext_resource type="FontFile" uid="uid://dj4sl8s77gdhu" path="res://Poppins-Medium.ttf" id="3_fxxry"]
+[ext_resource type="Texture2D" uid="uid://d2owgs4sviyfo" path="res://image 2332.png" id="4_555hv"]
+[ext_resource type="FontFile" uid="uid://b3oeqhmov57wi" path="res://Poppins-Bold.ttf" id="4_e23pa"]
+[ext_resource type="Script" uid="uid://dssqgjica660a" path="res://myjournal_navigation.gd" id="5_myjournal_nav"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_es4g7"]
+texture = ExtResource("1_ksg52")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t58sl"]
+bg_color = Color(0.99607843, 0.95686275, 0.8980392, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fxxry"]
+bg_color = Color(0.3019608, 0.5647059, 0.24313726, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e23pa"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8gk7d"]
+texture = ExtResource("4_555hv")
+
+[node name="Myjournal" type="Control" unique_id=1657751065]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_myjournal_nav")
+
+[node name="Panel" type="Panel" parent="." unique_id=417380217]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_es4g7")
+
+[node name="Label" type="Label" parent="." unique_id=1843875379]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -168.0
+offset_top = 42.0
+offset_right = 166.0
+offset_bottom = 113.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_e23pa")
+theme_override_font_sizes/font_size = 50
+text = "MY JOURNAL"
+
+[node name="Label" type="Label" parent="Label" unique_id=983602903]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = -1.0
+offset_right = 121.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_fxxry")
+theme_override_font_sizes/font_size = 17
+text = "Your thoughts are safe here."
+
+[node name="Panel2" type="Panel" parent="." unique_id=1449784245]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.0
+offset_top = -245.0
+offset_right = 224.0
+offset_bottom = 315.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t58sl")
+
+[node name="Button" type="Button" parent="Panel2" unique_id=1371383505]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -62.0
+offset_top = -42.0
+offset_right = 64.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_e23pa")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_fxxry")
+text = "SAVE"
+
+[node name="Button2" type="Button" parent="Panel2" unique_id=595685917]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -63.0
+offset_top = 36.0
+offset_right = 63.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_e23pa")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_e23pa")
+text = "CLOSE"
+
+[node name="Panel3" type="Panel" parent="." unique_id=561553957]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 169.0
+offset_right = 481.0
+offset_bottom = 669.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_8gk7d")
+
+[node name="EntryTextEdit" type="TextEdit" parent="Panel3" unique_id=1738294562]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 54.0
+offset_top = 57.0
+offset_right = -55.0
+offset_bottom = -65.0
+grow_horizontal = 2
+grow_vertical = 2
+wrap_mode = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1380838730]
+layout_mode = 0
+offset_left = 406.0
+offset_top = 664.0
+offset_right = 450.0
+offset_bottom = 687.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0/300"

@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://co4mabs4vk0kl"]
+
+[ext_resource type="Texture2D" uid="uid://by4equdkuvhyv" path="res://ChatGPT Image Aug 10, 2026, 02_08_50 PM.png" id="1_gaetm"]
+[ext_resource type="Texture2D" uid="uid://ki3i31nv7fer" path="res://idle222.png" id="2_tgged"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b56sj"]
+atlas = ExtResource("1_gaetm")
+region = Rect2(0, 0, 313, 440)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f73l2"]
+atlas = ExtResource("1_gaetm")
+region = Rect2(313, 0, 313, 440)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0quf1"]
+atlas = ExtResource("1_gaetm")
+region = Rect2(626, 0, 313, 440)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrebn"]
+atlas = ExtResource("1_gaetm")
+region = Rect2(939, 0, 313, 440)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5qgy"]
+atlas = ExtResource("2_tgged")
+region = Rect2(0, 0, 313, 423)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3mhrs"]
+atlas = ExtResource("2_tgged")
+region = Rect2(313, 0, 313, 423)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mujox"]
+atlas = ExtResource("2_tgged")
+region = Rect2(626, 0, 313, 423)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp0kj"]
+atlas = ExtResource("2_tgged")
+region = Rect2(939, 0, 313, 423)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i80q0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b56sj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f73l2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0quf1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrebn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5qgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3mhrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mujox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp0kj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="IDLE_BOY" type="Node2D" unique_id=1052274068]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1511480946]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1524574111]
+texture_filter = 1
+position = Vector2(263, 445)
+scale = Vector2(1.3071088, 1.345698)
+sprite_frames = SubResource("SpriteFrames_i80q0")
+autoplay = "default"
+frame_progress = 0.11723391

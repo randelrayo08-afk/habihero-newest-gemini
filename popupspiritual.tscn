@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://ybc2cd4d8i7n"]
+
+[ext_resource type="Texture2D" uid="uid://deqq6yo7sd3xt" path="res://spiritual.png" id="1_bkq4x"]
+[ext_resource type="FontFile" uid="uid://q1xwtxbsp3pu" path="res://Poppins/Poppins-Black.ttf" id="2_ofekh"]
+[ext_resource type="FontFile" uid="uid://dg0qe1cy0fcdy" path="res://Poppins/Poppins-Regular.ttf" id="3_i3q7j"]
+[ext_resource type="Script" uid="uid://bab6c2281d5ou" path="res://shared_nav.gd" id="4_nav"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bg"]
+texture = ExtResource("1_bkq4x")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0, 0, 0, 0.7019608)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_input"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_button"]
+bg_color = Color(0.8117647, 0.5411765, 0.05882353, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="PopupSpiritual" type="Control" unique_id=1644728298]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_nav")
+
+[node name="Panel" type="Panel" parent="." unique_id=1239747318]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_bg")
+
+[node name="ContentPanel" type="Panel" parent="Panel" unique_id=1695038399]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -150.0
+offset_right = 176.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="TitleLabel" type="Label" parent="Panel/ContentPanel" unique_id=1854697506]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 332.0
+offset_bottom = 45.0
+theme_override_fonts/font = ExtResource("2_ofekh")
+theme_override_font_sizes/font_size = 24
+text = "My Reflection"
+horizontal_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="Panel/ContentPanel" unique_id=1476303299]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 332.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("3_i3q7j")
+theme_override_font_sizes/font_size = 12
+text = "What did you learn from today's sharing?"
+horizontal_alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/ContentPanel" unique_id=1854697844]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 85.0
+offset_right = 332.0
+offset_bottom = 225.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_input")
+placeholder_text = "Write your reflection here..."
+
+[node name="SubmitButton" type="Button" parent="Panel/ContentPanel" unique_id=1854697845]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 240.0
+offset_right = 232.0
+offset_bottom = 270.0
+theme_override_fonts/font = ExtResource("2_ofekh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_button")
+text = "Submit"
+
+[node name="BackButton" type="Button" parent="Panel" unique_id=1854697846]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 60.0
+text = "↩"

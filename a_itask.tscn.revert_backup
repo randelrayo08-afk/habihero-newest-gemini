@@ -1,0 +1,711 @@
+[gd_scene format=3 uid="uid://beefvl7up4x5n"]
+
+[ext_resource type="Texture2D" uid="uid://c7x4nrwafqm0m" path="res://AI TASK SCREEN (1).png" id="1_yq7u5"]
+[ext_resource type="FontFile" uid="uid://bqtmwbvua6xie" path="res://Poppins-Regular.ttf" id="2_ppxoh"]
+[ext_resource type="Texture2D" uid="uid://dgjj1amw7lig7" path="res://camera (1).png" id="3_6wsin"]
+[ext_resource type="FontFile" uid="uid://b3oeqhmov57wi" path="res://Poppins-Bold.ttf" id="3_ms0lt"]
+[ext_resource type="Texture2D" uid="uid://b0nm3170iuinx" path="res://attach-file.png" id="4_8eujg"]
+[ext_resource type="FontFile" uid="uid://dj4sl8s77gdhu" path="res://Poppins-Medium.ttf" id="4_e1spm"]
+[ext_resource type="FontFile" uid="uid://dh8gtpvo4mt3o" path="res://CherryBombOne-Regular.ttf" id="6_ms0lt"]
+[ext_resource type="Texture2D" uid="uid://g2tbe3185ufg" path="res://back.png" id="7_a4wdt"]
+[ext_resource type="Texture2D" uid="uid://clc8e3w6apoih" path="res://f48382b1-61f4-487c-9560-b59e07ec8d92.png" id="8_hiscx"]
+[ext_resource type="FontFile" uid="uid://dixvgvwduvskp" path="res://Poppins/Poppins-Regular.ttf" id="9_e1spm"]
+[ext_resource type="Script" uid="uid://djs42fuemt6s0" path="res://a_itask_navigation.gd" id="10_a1ng"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6wsin"]
+texture = ExtResource("1_yq7u5")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8eujg"]
+bg_color = Color(0.9764706, 0.92156863, 0.8156863, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.4862745, 0.27450982, 0.078431375, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hiscx"]
+bg_color = Color(0.9764706, 0.92156863, 0.8156863, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.4862745, 0.27450982, 0.078431375, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_header_badge"]
+bg_color = Color(0.20784314, 0.4745098, 0.23529412, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.18039216, 0.27058825, 0.16078432, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1spm"]
+bg_color = Color(0.9764706, 0.92156863, 0.8156863, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.4862745, 0.27450982, 0.078431375, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yq7u5"]
+bg_color = Color(0.98039216, 0.88235295, 0.72156864, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.7058824, 0.5529412, 0.33333334, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5tbu"]
+bg_color = Color(0.9764706, 0.92156863, 0.8156863, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.4862745, 0.27450982, 0.078431375, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ppxoh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.3019608, 0.5647059, 0.24313726, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ms0lt"]
+texture = ExtResource("3_6wsin")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bthcc"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.7058824, 0.5529412, 0.33333334, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a4wdt"]
+texture = ExtResource("4_8eujg")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ms0lt"]
+bg_color = Color(0.20784314, 0.45490196, 0.14117648, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bthcc"]
+texture = ExtResource("7_a4wdt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w5tbu"]
+texture = ExtResource("8_hiscx")
+
+[node name="AItask" type="Control" unique_id=1644740496]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_a1ng")
+
+[node name="Panel" type="Panel" parent="." unique_id=807420464]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6wsin")
+
+[node name="Panel2" type="Panel" parent="." unique_id=2042224028]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = -278.0
+offset_right = 182.0
+offset_bottom = 263.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8eujg")
+
+[node name="Panel2" type="Panel" parent="Panel2" unique_id=1381396007]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.0
+offset_top = -109.0
+offset_bottom = 130.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hiscx")
+
+[node name="ObjectiveTitle" type="Label" parent="Panel2/Panel2" unique_id=2100000001]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_ms0lt")
+theme_override_font_sizes/font_size = 12
+text = "Objective:"
+
+[node name="ObjectiveTitle2" type="Label" parent="Panel2/Panel2" unique_id=602157151]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_ms0lt")
+theme_override_font_sizes/font_size = 12
+text = "	QUEST DETAILS"
+
+[node name="ObjectiveValue" type="Label" parent="Panel2/Panel2" unique_id=2100000008]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+text = "Read a Bible verse and apply it to your life"
+autowrap_mode = 1
+
+[node name="Line1" type="ColorRect" parent="Panel2/Panel2" unique_id=2100000002]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.6784314, 0.5529412, 0.3372549, 1)
+
+[node name="EstimatedTimeLabel" type="Label" parent="Panel2/Panel2" unique_id=2100000003]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+text = "Estimated Time: 15 mins."
+autowrap_mode = 1
+
+[node name="Line2" type="ColorRect" parent="Panel2/Panel2" unique_id=2100000004]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.6784314, 0.5529412, 0.3372549, 1)
+
+[node name="DifficultyLabel" type="Label" parent="Panel2/Panel2" unique_id=2100000005]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+text = "Difficulty: Easy"
+autowrap_mode = 1
+
+[node name="Line3" type="ColorRect" parent="Panel2/Panel2" unique_id=2100000006]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+color = Color(0.6784314, 0.5529412, 0.3372549, 1)
+
+[node name="CategoryLabel" type="Label" parent="Panel2/Panel2" unique_id=2100000007]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = 2
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+text = "Category: Religion"
+autowrap_mode = 1
+
+[node name="TitleLabel" type="Label" parent="Panel2" unique_id=826367929]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.12156863, 0.08235294, 0.01960784, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_ms0lt")
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+autowrap_mode = 1
+
+[node name="CategoryBadge" type="Label" parent="Panel2" unique_id=2100002001]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_header_badge")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle" type="Label" parent="Panel2" unique_id=2100002003]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.2, 0.16, 0.09, 1)
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 14
+autowrap_mode = 1
+
+[node name="Panel3" type="Panel" parent="Panel2" unique_id=792184100]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = -111.0
+offset_right = 157.0
+offset_bottom = 244.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_e1spm")
+
+[node name="Label" type="Label" parent="Panel2/Panel3" unique_id=1663757348]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+text = "OR"
+
+[node name="Label2" type="Label" parent="Panel2/Panel3" unique_id=1121326530]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+text = "Describe what you did:"
+
+[node name="TextEdit" type="TextEdit" parent="Panel2/Panel3" unique_id=1361564535]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0.6)
+theme_override_font_sizes/font_size = 11
+theme_override_styles/normal = SubResource("StyleBoxFlat_yq7u5")
+placeholder_text = "Write your answer here"
+wrap_mode = 1
+
+[node name="Label" type="Label" parent="Panel2/Panel3/TextEdit" unique_id=1799914016]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("4_e1spm")
+theme_override_font_sizes/font_size = 8
+text = "0/300"
+
+[node name="Label3" type="Label" parent="Panel2/Panel3" unique_id=109696789]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_ms0lt")
+theme_override_font_sizes/font_size = 12
+text = "Submit Proof"
+
+[node name="Label3" type="Label" parent="Panel2/Panel3/Label3" unique_id=287289622]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 11
+text = "Choose how you 
+want to submit:"
+horizontal_alignment = 1
+
+[node name="Panel4" type="Panel" parent="Panel2" unique_id=1069623734]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = 139.25
+offset_right = -3.0
+offset_bottom = 240.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_w5tbu")
+
+[node name="Label3" type="Label" parent="Panel2/Panel4" unique_id=1187438733]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_ms0lt")
+theme_override_font_sizes/font_size = 12
+text = "Rewards"
+
+[node name="RewardCoins" type="Label" parent="Panel2/Panel4" unique_id=2100001002]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+text = "5 coins"
+autowrap_mode = 1
+
+[node name="RewardEXP" type="Label" parent="Panel2/Panel4" unique_id=2100001003]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 12
+text = "25 exp"
+horizontal_alignment = 2
+autowrap_mode = 1
+
+[node name="TakePhotoButton" type="Button" parent="Panel2" unique_id=1975467387]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ppxoh")
+
+[node name="CameraIconPanel" type="Panel" parent="Panel2/TakePhotoButton" unique_id=380783213]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ms0lt")
+
+[node name="Label" type="Label" parent="Panel2/TakePhotoButton" unique_id=1529933972]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = -5
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 9
+text = "Take Photo"
+horizontal_alignment = 1
+
+[node name="AttachButton" type="Button" parent="Panel2" unique_id=298694192]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bthcc")
+
+[node name="AttachIconPanel" type="Panel" parent="Panel2/AttachButton" unique_id=888888888]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_a4wdt")
+
+[node name="Label" type="Label" parent="Panel2/AttachButton" unique_id=290092203]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = -5
+theme_override_fonts/font = ExtResource("2_ppxoh")
+theme_override_font_sizes/font_size = 9
+text = "Attach File"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="." unique_id=1977289880]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -134.0
+offset_top = -150.0
+offset_right = 127.0
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("6_ms0lt")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_ms0lt")
+text = "Submit"
+
+[node name="BACKBTN" type="Button" parent="." unique_id=304352963]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_bthcc")
+
+[node name="Panel3" type="Panel" parent="." unique_id=953392999]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -177.0
+offset_top = -163.0
+offset_right = 176.0
+offset_bottom = 300.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_w5tbu")
+
+[node name="Label" type="Label" parent="Panel3" unique_id=331042414]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -20.5
+offset_right = 65.5
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("9_e1spm")
+theme_override_font_sizes/font_size = 40
+text = "TASKS"

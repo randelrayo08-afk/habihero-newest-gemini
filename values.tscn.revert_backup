@@ -1,0 +1,229 @@
+[gd_scene format=3 uid="uid://db02la4wo2ng6"]
+
+[ext_resource type="Texture2D" uid="uid://434cpqu1od3m" path="res://VALUES (3).png" id="1_xk7jd"]
+[ext_resource type="FontFile" uid="uid://dh8gtpvo4mt3o" path="res://CherryBombOne-Regular.ttf" id="2_bqg1e"]
+[ext_resource type="FontFile" uid="uid://dmmgsuy41bxj6" path="res://Poppins-ExtraBold.ttf" id="3_0241a"]
+[ext_resource type="Texture2D" uid="uid://clc8e3w6apoih" path="res://f48382b1-61f4-487c-9560-b59e07ec8d92.png" id="4_7sl8n"]
+[ext_resource type="Texture2D" uid="uid://qecjqqwqmebc" path="res://greater-than (1).png" id="4_bqg1e"]
+[ext_resource type="FontFile" uid="uid://dixvgvwduvskp" path="res://Poppins/Poppins-Regular.ttf" id="5_lkb45"]
+[ext_resource type="Texture2D" uid="uid://g2tbe3185ufg" path="res://back.png" id="6_c8h4g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gswf1"]
+texture = ExtResource("1_xk7jd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubavq"]
+bg_color = Color(0, 0, 0, 0.7019608)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_676fu"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0241a"]
+texture = ExtResource("4_bqg1e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hcoum"]
+texture = ExtResource("4_7sl8n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x2xtj"]
+texture = ExtResource("6_c8h4g")
+
+[node name="VALUES" type="Control" unique_id=2131673938]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1873844322]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_gswf1")
+
+[node name="Panel3" type="Panel" parent="Panel" unique_id=573310060]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -66.0
+offset_right = 203.0
+offset_bottom = 87.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="Panel" type="Panel" parent="Panel/Panel3" unique_id=1350650667]
+layout_mode = 0
+offset_left = 106.0
+offset_right = 309.0
+offset_bottom = 28.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_676fu")
+
+[node name="Panel3" type="Panel" parent="Panel/Panel3" unique_id=874533982]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -198.5
+offset_top = 86.5
+offset_right = 204.5
+offset_bottom = 239.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="Panel" type="Panel" parent="Panel/Panel3/Panel3" unique_id=1614838177]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 204.0
+offset_bottom = 28.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_676fu")
+
+[node name="Label" type="Label" parent="Panel/Panel3/Panel3/Panel" unique_id=617320491]
+layout_mode = 0
+offset_left = 14.0
+offset_top = -5.0
+offset_right = 193.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("2_bqg1e")
+theme_override_font_sizes/font_size = 22
+text = "Today's Challenge"
+
+[node name="Panel4" type="Panel" parent="Panel" unique_id=2135365551]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.0
+offset_top = 265.0
+offset_right = 206.0
+offset_bottom = 387.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="Panel" type="Panel" parent="Panel/Panel4" unique_id=1965535238]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 150.0
+offset_bottom = 28.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_676fu")
+
+[node name="Label" type="Label" parent="Panel/Panel4/Panel" unique_id=650773706]
+layout_mode = 0
+offset_left = 25.0
+offset_top = -5.0
+offset_right = 130.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("2_bqg1e")
+theme_override_font_sizes/font_size = 22
+text = "Reflection"
+
+[node name="Label" type="Label" parent="Panel/Panel4" unique_id=662293664]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 50.0
+offset_right = 332.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0241a")
+theme_override_font_sizes/font_size = 15
+text = "What did you learn from today's value?"
+
+[node name="Button" type="Button" parent="Panel/Panel4" unique_id=1082426761]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 42.0
+offset_right = 388.0
+offset_bottom = 78.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0241a")
+
+[node name="Panel2" type="Panel" parent="." unique_id=775745475]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -176.0
+offset_top = -166.0
+offset_right = 177.0
+offset_bottom = 317.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_hcoum")
+
+[node name="Label" type="Label" parent="Panel2" unique_id=1570644659]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -20.5
+offset_right = 65.5
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("5_lkb45")
+theme_override_font_sizes/font_size = 40
+text = "VALUES"
+
+[node name="Panel3" type="Panel" parent="." unique_id=1634020016]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 129.0
+offset_right = 378.0
+offset_bottom = 188.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="Panel3" type="Panel" parent="Panel3" unique_id=1435375203]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -117.5
+offset_top = 38.5
+offset_right = 117.5
+offset_bottom = 165.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="Button" type="Button" parent="." unique_id=336140542]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 75.0
+offset_bottom = 81.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_x2xtj")

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://c3f1ec7jsknyc"]
+
+[ext_resource type="Script" uid="uid://jluis8itaru8" path="res://godot_examples/companion_voice_fallback.gd" id="1"]
+
+[node name="CompanionVoiceFallback" type="Control" unique_id=1234567890]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1887873557]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="StatusLabel" type="Label" parent="VBoxContainer" unique_id=21298190]
+layout_mode = 2
+text = "Status"
+
+[node name="TranscriptLabel" type="Label" parent="VBoxContainer" unique_id=1343312702]
+layout_mode = 2
+text = "Transcript:"
+
+[node name="ReplyLabel" type="Label" parent="VBoxContainer" unique_id=1249460947]
+layout_mode = 2
+text = "Reply:"
+
+[node name="RecordButton" type="Button" parent="VBoxContainer" unique_id=476533844]
+layout_mode = 2
+text = "Start Recording"

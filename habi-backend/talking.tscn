@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://bm7jtuarooqgt"]
+
+[ext_resource type="Texture2D" uid="uid://btir5hsihppde" path="res://ChatGPT Image Aug 10, 2026, 10_46_15 AM.png" id="1_b3qq4"]
+[ext_resource type="Texture2D" uid="uid://c2qh1eruqe4q4" path="res://talk.png" id="2_d0m73"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0clw"]
+atlas = ExtResource("1_b3qq4")
+region = Rect2(0, 0, 250, 292)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gveyc"]
+atlas = ExtResource("1_b3qq4")
+region = Rect2(250, 0, 250, 292)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocjox"]
+atlas = ExtResource("1_b3qq4")
+region = Rect2(500, 0, 250, 292)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fcah"]
+atlas = ExtResource("1_b3qq4")
+region = Rect2(750, 0, 250, 292)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xppcf"]
+atlas = ExtResource("1_b3qq4")
+region = Rect2(1000, 0, 250, 292)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjkqi"]
+atlas = ExtResource("1_b3qq4")
+region = Rect2(1250, 0, 250, 292)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obf7q"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(0, 0, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5cux"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(250, 0, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oggca"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(500, 0, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hd8js"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(750, 0, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a50uc"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(1000, 0, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vm8g"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(1250, 0, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74gl3"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(0, 283, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdwrt"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(250, 283, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kui3c"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(500, 283, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejdg5"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(750, 283, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0pvv"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(1000, 283, 250, 283)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svp6s"]
+atlas = ExtResource("2_d0m73")
+region = Rect2(1250, 283, 250, 283)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_whmbo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0clw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gveyc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocjox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fcah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xppcf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjkqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obf7q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5cux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oggca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hd8js")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a50uc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vm8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74gl3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdwrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kui3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejdg5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0pvv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svp6s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="talking" type="Node2D" unique_id=1721679033]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1721641256]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=370264136]
+position = Vector2(2.5000267, 0.50001144)
+scale = Vector2(2.052, 2.126712)
+sprite_frames = SubResource("SpriteFrames_whmbo")
+frame_progress = 0.9807974
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2094192600]
+offset = Vector2(0.5, 0.5)
+limit_left = -320
+limit_top = -187
+limit_right = 320
+limit_bottom = 180

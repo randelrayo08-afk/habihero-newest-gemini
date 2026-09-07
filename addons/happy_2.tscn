@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://bm56pqw0ixh00"]
+
+[ext_resource type="Texture2D" uid="uid://du1006p414gsf" path="res://ChatGPT Image Aug 10, 2026, 12_55_21 PM (2).png" id="1_exh4c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eht4r"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(0, 0, 307, 504)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vk804"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(307, 0, 307, 504)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpqj5"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(614, 0, 307, 504)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gs4jt"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(921, 0, 307, 504)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6oaon"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(0, 503, 323, 503)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8vv8"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(1228, 0, 307, 504)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0q82"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(323, 503, 323, 503)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8iuy"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(921, 491, 307, 491)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vyf2b"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(921, 493, 307, 493)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5lkg"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(1228, 493, 307, 493)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ie5mv"]
+atlas = ExtResource("1_exh4c")
+region = Rect2(1228, 491, 307, 491)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_531bp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eht4r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vk804")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpqj5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gs4jt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6oaon")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8vv8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0q82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0q82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8iuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vyf2b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5lkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ie5mv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="happy2" type="Node2D" unique_id=1423394296]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1497515129]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=190698317]
+position = Vector2(-1.9073486e-06, 1)
+scale = Vector2(1.296417, 1.3809524)
+sprite_frames = SubResource("SpriteFrames_531bp")
+frame_progress = 0.12817658
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D/AnimatedSprite2D" unique_id=121373574]
+offset = Vector2(0.5, 0.5)
+limit_left = -320
+limit_top = -187
+limit_right = 320
+limit_bottom = 180

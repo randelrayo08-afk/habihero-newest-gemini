@@ -1,0 +1,11 @@
+.env
+.env.*
+venv/
+node_modules/
+*.log
+*.apk
+*.idsig
+serviceAccountKey.json
+serviceaccountkey.json
+__pycache__/
+.git/

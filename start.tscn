@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://c5m6stgh18jvx"]
+
+[ext_resource type="Texture2D" uid="uid://bfn20lkxs3hw5" path="res://WELCOME SCREEN.png" id="1_qn1rc"]
+[ext_resource type="Script" uid="uid://cmwx1sidiwm4c" path="res://start_navigation.gd" id="3_vhg2p"]
+[ext_resource type="FontFile" uid="uid://c2tnwo3myvnjv" path="res://Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="3_y5hus"]
+[ext_resource type="FontFile" uid="uid://q1xwtxbsp3pu" path="res://Poppins/Poppins-Black.ttf" id="4_oiuna"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y5hus"]
+texture = ExtResource("1_qn1rc")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oiuna"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="Start" type="Control" unique_id=1219588592]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_vhg2p")
+
+[node name="Panel" type="Panel" parent="." unique_id=1357959498]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_y5hus")
+
+[node name="Label" type="Label" parent="." unique_id=1382443350]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -166.0
+offset_top = 46.0
+offset_right = 162.0
+offset_bottom = 163.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_y5hus")
+theme_override_font_sizes/font_size = 90
+text = "Welcome"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Label" unique_id=124358340]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -175.0
+offset_top = 89.0
+offset_right = 175.0
+offset_bottom = 220.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_y5hus")
+theme_override_font_sizes/font_size = 90
+text = "to"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Label" unique_id=2080438674]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -206.0
+offset_top = 174.0
+offset_right = 211.0
+offset_bottom = 305.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_y5hus")
+theme_override_font_sizes/font_size = 90
+text = "HabiHero!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1813980326]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = 138.0
+offset_right = 175.0
+offset_bottom = 168.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 20
+text = "Let's grow happy habits together!"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=381413653]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = 180.0
+offset_right = 118.0
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_oiuna")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_oiuna")
+text = "START"

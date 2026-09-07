@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cav4nlqqugf27"]
+
+[ext_resource type="Script" uid="uid://blse1lgg3v0s" path="res://godot_examples/livekit_demo.gd" id="1"]
+
+[node name="LiveKitDemo" type="Node" unique_id=1812852858]
+script = ExtResource("1")
+
+[node name="Panel" type="Panel" parent="." unique_id=1217831392]
+offset_left = 180.0
+offset_top = 296.0
+offset_right = 320.0
+offset_bottom = 411.0
+
+[node name="Button" type="Button" parent="Panel" unique_id=927255837]
+layout_mode = 0
+offset_right = 141.0
+offset_bottom = 116.0

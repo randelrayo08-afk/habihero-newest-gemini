@@ -1,0 +1,384 @@
+[gd_scene format=3 uid="uid://drfx0pp8gxa36"]
+
+[ext_resource type="Texture2D" uid="uid://deqq6yo7sd3xt" path="res://spiritual.png" id="1_y7m15"]
+[ext_resource type="FontFile" uid="uid://q1xwtxbsp3pu" path="res://Poppins/Poppins-Black.ttf" id="2_6lliy"]
+[ext_resource type="FontFile" uid="uid://dg0qe1cy0fcdy" path="res://Poppins/Poppins-Regular.ttf" id="3_fr7bw"]
+[ext_resource type="Texture2D" uid="uid://qecjqqwqmebc" path="res://greater-than (1).png" id="4_c435u"]
+[ext_resource type="Texture2D" uid="uid://cyr6jnonbmhsv" path="res://image 2346.png" id="5_jghm7"]
+[ext_resource type="Texture2D" uid="uid://dljelck38m626" path="res://praying.png" id="6_1ge6b"]
+[ext_resource type="Texture2D" uid="uid://bcdreoew1m6mp" path="res://bible.png" id="7_iygo8"]
+[ext_resource type="Texture2D" uid="uid://bpbpsnmo2ve0l" path="res://jesus.png" id="8_0emb7"]
+[ext_resource type="Texture2D" uid="uid://bppoukodapv1u" path="res://problem.png" id="9_p226m"]
+[ext_resource type="Texture2D" uid="uid://clc8e3w6apoih" path="res://f48382b1-61f4-487c-9560-b59e07ec8d92.png" id="10_tqm3l"]
+[ext_resource type="Texture2D" uid="uid://g2tbe3185ufg" path="res://back.png" id="12_dbwtk"]
+[ext_resource type="Script" uid="uid://cq8lc03fv4m8a" path="res://spiritual.gd" id="13_script"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nej2l"]
+texture = ExtResource("1_y7m15")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1t6y8"]
+bg_color = Color(0, 0, 0, 0.7019608)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_icets"]
+texture = ExtResource("4_c435u")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uy5pr"]
+texture = ExtResource("5_jghm7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ltprx"]
+bg_color = Color(0.8117647, 0.5411765, 0.05882353, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5prjo"]
+texture = ExtResource("6_1ge6b")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btgxb"]
+bg_color = Color(0.13333334, 0.3137255, 0.54901963, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7hwjr"]
+texture = ExtResource("7_iygo8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dug8u"]
+texture = ExtResource("8_0emb7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h887f"]
+texture = ExtResource("9_p226m")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3tvq5"]
+texture = ExtResource("10_tqm3l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i2uvd"]
+texture = ExtResource("12_dbwtk")
+
+[node name="Spiritual" type="Control" unique_id=1328286744]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("13_script")
+
+[node name="Panel" type="Panel" parent="." unique_id=1823413667]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_nej2l")
+
+[node name="Panel" type="Panel" parent="Panel" unique_id=1439294214]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -203.0
+offset_top = 113.0
+offset_right = 209.0
+offset_bottom = 370.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1t6y8")
+
+[node name="Label" type="Label" parent="Panel/Panel" unique_id=193084553]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 149.0
+offset_right = 254.0
+offset_bottom = 172.0
+theme_override_fonts/font = ExtResource("2_6lliy")
+text = "IMAGO DEI"
+
+[node name="Label" type="Label" parent="Panel/Panel/Label" unique_id=379340837]
+layout_mode = 0
+offset_left = -127.0
+offset_top = 23.0
+offset_right = 217.0
+offset_bottom = 98.0
+theme_override_fonts/font = ExtResource("3_fr7bw")
+text = "“We are created in the image 
+and likeness of God.”"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Panel/Panel/Label/Label" unique_id=790549798]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 50.0
+offset_right = 230.0
+offset_bottom = 73.0
+theme_override_fonts/font = ExtResource("3_fr7bw")
+text = "Genesis 1:27"
+horizontal_alignment = 1
+
+[node name="imagoBut" type="Button" parent="Panel/Panel" unique_id=1128581578]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 207.0
+offset_right = 401.0
+offset_bottom = 243.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_icets")
+
+[node name="Panel2" type="Panel" parent="Panel" unique_id=5962554]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 126.0
+offset_right = 442.0
+offset_bottom = 261.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_uy5pr")
+
+[node name="DAILY BIBLE" type="Panel" parent="Panel" unique_id=1130863791]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -203.0
+offset_top = 385.0
+offset_right = 210.0
+offset_bottom = 511.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1t6y8")
+
+[node name="BIBLE MEANS" type="Panel" parent="Panel/DAILY BIBLE" unique_id=1891838541]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -203.5
+offset_top = 134.0
+offset_right = 206.5
+offset_bottom = 255.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1t6y8")
+
+[node name="REFLECTION" type="Panel" parent="Panel/DAILY BIBLE/BIBLE MEANS" unique_id=388258735]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -202.0
+offset_top = 140.0
+offset_right = -18.0
+offset_bottom = 270.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1t6y8")
+
+[node name="PRAYER" type="Panel" parent="Panel/DAILY BIBLE/BIBLE MEANS/REFLECTION" unique_id=1234907896]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 124.0
+offset_top = -1.0
+offset_right = 308.0
+offset_bottom = 129.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1t6y8")
+
+[node name="Panel" type="Panel" parent="Panel/DAILY BIBLE/BIBLE MEANS/REFLECTION/PRAYER" unique_id=1343694992]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 183.0
+offset_bottom = 26.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ltprx")
+
+[node name="Label" type="Label" parent="Panel/DAILY BIBLE/BIBLE MEANS/REFLECTION/PRAYER" unique_id=1465709298]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 1.0
+offset_right = 123.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("2_6lliy")
+text = "Prayer"
+
+[node name="Panel2" type="Panel" parent="Panel/DAILY BIBLE/BIBLE MEANS/REFLECTION/PRAYER" unique_id=1023812756]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 44.0
+offset_right = 62.0
+offset_bottom = 101.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_5prjo")
+
+[node name="PrayerText" type="Label" parent="Panel/DAILY BIBLE/BIBLE MEANS/REFLECTION/PRAYER" unique_id=1234907897]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 33.0
+offset_right = 173.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_fr7bw")
+theme_override_font_sizes/font_size = 9
+text = "Lord, help me show Your love today. Amen."
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Panel/DAILY BIBLE/BIBLE MEANS/REFLECTION" unique_id=722141315]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 85.0
+offset_right = 174.0
+offset_bottom = 121.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_icets")
+
+[node name="Label" type="Label" parent="Panel/DAILY BIBLE/BIBLE MEANS/REFLECTION" unique_id=1546214689]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 42.0
+offset_right = 175.0
+offset_bottom = 91.0
+theme_override_font_sizes/font_size = 12
+text = "What did you learn 
+from today's 
+sharing?"
+
+[node name="meaning label" type="Label" parent="Panel/DAILY BIBLE/BIBLE MEANS" unique_id=1783936886]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 38.0
+offset_right = 387.0
+offset_bottom = 111.0
+
+[node name="Panel" type="Panel" parent="Panel/DAILY BIBLE" unique_id=1556828682]
+layout_mode = 0
+offset_left = 112.0
+offset_right = 301.0
+offset_bottom = 27.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_btgxb")
+
+[node name="Panel" type="Panel" parent="Panel/DAILY BIBLE/Panel" unique_id=449303772]
+layout_mode = 0
+offset_left = -109.0
+offset_top = 133.0
+offset_right = 301.0
+offset_bottom = 157.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ltprx")
+
+[node name="Panel" type="Panel" parent="Panel/DAILY BIBLE/Panel/Panel" unique_id=164131059]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 141.0
+offset_right = 186.0
+offset_bottom = 166.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ltprx")
+
+[node name="Label" type="Label" parent="Panel/DAILY BIBLE/Panel/Panel/Panel" unique_id=120318215]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 1.0
+offset_right = 134.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("2_6lliy")
+text = "Reflection"
+
+[node name="Label" type="Label" parent="Panel/DAILY BIBLE/Panel/Panel" unique_id=1974384074]
+layout_mode = 0
+offset_left = 124.0
+offset_right = 289.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_6lliy")
+text = "What does it mean?"
+
+[node name="Label" type="Label" parent="Panel/DAILY BIBLE/Panel" unique_id=856978572]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 2.0
+offset_right = 171.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("2_6lliy")
+text = "DAILY BIBLE VERSE"
+
+[node name="Panel2" type="Panel" parent="Panel/DAILY BIBLE" unique_id=630321095]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 35.0
+offset_right = 84.0
+offset_bottom = 102.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_7hwjr")
+
+[node name="Panel2" type="Panel" parent="Panel/DAILY BIBLE/Panel2" unique_id=1218497200]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 137.0
+offset_right = 64.0
+offset_bottom = 204.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_dug8u")
+
+[node name="Panel2" type="Panel" parent="Panel/DAILY BIBLE/Panel2/Panel2" unique_id=1638592711]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 144.0
+offset_right = 50.0
+offset_bottom = 201.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_h887f")
+
+[node name="daily verses" type="Label" parent="Panel/DAILY BIBLE" unique_id=414382279]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 30.0
+offset_right = 396.0
+offset_bottom = 119.0
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Panel2" type="Panel" parent="." unique_id=837484270]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -175.0
+offset_top = -180.0
+offset_right = 178.0
+offset_bottom = 297.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_3tvq5")
+
+[node name="Label" type="Label" parent="Panel2" unique_id=930217448]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -20.5
+offset_right = 65.5
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 40
+text = "Liturgical"
+
+[node name="back btn" type="Button" parent="." unique_id=620804341]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 75.0
+offset_bottom = 81.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_i2uvd")

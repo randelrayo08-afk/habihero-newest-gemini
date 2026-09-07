@@ -1,0 +1,34 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+
+    "users": {
+      "$userId": {
+        ".read": true,
+        ".write": true
+      }
+    },
+
+    "conversations": {
+      "$conversationId": {
+        ".read": true,
+        ".write": true,
+
+        "messages": {
+          "$messageId": {
+            ".read": true,
+            ".write": true
+          }
+        }
+      }
+    },
+
+    "messages": {
+      "$messageId": {
+        ".read": true,
+        ".write": true
+      }
+    }
+  }
+}

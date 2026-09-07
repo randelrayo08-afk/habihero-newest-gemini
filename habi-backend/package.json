@@ -1,0 +1,41 @@
+{
+  "name": "habi-backend",
+  "version": "1.0.0",
+  "description": "Habi app backend server with Firebase integration",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test-api.js",
+    "livekit-agent": "node livekit-agent.js dev"
+  },
+  "keywords": [
+    "habi",
+    "firebase",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@livekit/agents": "^1.2.4",
+    "@livekit/agents-plugin-deepgram": "^1.2.4",
+    "@livekit/agents-plugin-elevenlabs": "^1.2.4",
+    "@livekit/agents-plugin-livekit": "^1.2.4",
+    "@livekit/agents-plugin-openai": "^1.2.4",
+    "@livekit/agents-plugin-silero": "^1.2.4",
+    "@livekit/noise-cancellation-node": "^0.1.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^13.7.0",
+    "form-data": "^4.0.0",
+    "livekit-server-sdk": "^2.15.1",
+    "ws": "^8.18.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "nodemon": "^3.0.2"
+  }
+}

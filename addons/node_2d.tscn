@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dh7e8ig0g205t"]
+
+[sub_resource type="Animation" id="Animation_iwrrk"]
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.35, 0.7, 1.05, 1.4, 1.85, 2.2, 2.55, 2.9, 3.3, 3.65, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, -6), Vector2(1, -1), Vector2(2, -5), Vector2(1, 0), Vector2(0, -7), Vector2(-1, -2), Vector2(-2, -6), Vector2(-1, 0), Vector2(0, -5), Vector2(0, -2), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body:rotation_degrees")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.1, 1.7, 2.3, 2.9, 3.5, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -1.3, 0.9, -0.6, 1.4, -1.1, 0.5, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.008, 1.012), Vector2(1, 1), Vector2(1.006, 1.009), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y32ns"]
+_data = {
+&"idle_talk": SubResource("Animation_iwrrk")
+}
+
+[node name="Node2D" type="Node2D" unique_id=238290808]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1053300917]
+libraries/ = SubResource("AnimationLibrary_y32ns")
+autoplay = &"idle_talk"

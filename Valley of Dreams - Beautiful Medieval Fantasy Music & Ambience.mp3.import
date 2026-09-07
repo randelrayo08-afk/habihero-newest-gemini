@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cng7vr1pepuw6"
+path="res://.godot/imported/Valley of Dreams - Beautiful Medieval Fantasy Music & Ambience.mp3-a7e74afdac9265f1904236c836af7009.mp3str"
+
+[deps]
+
+source_file="res://Valley of Dreams - Beautiful Medieval Fantasy Music & Ambience.mp3"
+dest_files=["res://.godot/imported/Valley of Dreams - Beautiful Medieval Fantasy Music & Ambience.mp3-a7e74afdac9265f1904236c836af7009.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,346 @@
+[gd_scene format=3 uid="uid://c6dyc2v63wei8"]
+
+[ext_resource type="Texture2D" uid="uid://bc5708bh5jiju" path="res://TERMS AND CONDITION.png" id="1_w4e7m"]
+[ext_resource type="FontFile" uid="uid://dg0qe1cy0fcdy" path="res://Poppins/Poppins-Regular.ttf" id="2_4bmet"]
+[ext_resource type="FontFile" uid="uid://c2tnwo3myvnjv" path="res://Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="2_caonl"]
+[ext_resource type="FontFile" uid="uid://q1xwtxbsp3pu" path="res://Poppins/Poppins-Black.ttf" id="3_caonl"]
+[ext_resource type="Texture2D" uid="uid://b5wlysvmr3akl" path="res://document.png" id="4_627cd"]
+[ext_resource type="Texture2D" uid="uid://v6vbshi6blhg" path="res://gear.png" id="5_nxhqh"]
+[ext_resource type="Texture2D" uid="uid://caycsjasjjjh2" path="res://idea.png" id="6_fgtr1"]
+[ext_resource type="Texture2D" uid="uid://cv7wnbkwbjlsi" path="res://unlocked.png" id="7_c8s15"]
+[ext_resource type="Texture2D" uid="uid://bueluwetej6gc" path="res://privacy.png" id="8_3c24x"]
+[ext_resource type="Texture2D" uid="uid://bek3yq323j5sv" path="res://boy.png" id="9_xq8ge"]
+[ext_resource type="Script" uid="uid://c2kvswynly8hr" path="res://privacy_signup_navigation.gd" id="privacy_signup_nav"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7k63w"]
+texture = ExtResource("1_w4e7m")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q726t"]
+bg_color = Color(0.9372549, 0.78431374, 0.5254902, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0, 0, 0, 0.8)
+shadow_size = 3
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l2lyn"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8064267, 0.32990664, 0.1373589, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0jf6y"]
+texture = ExtResource("4_627cd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nntod"]
+texture = ExtResource("5_nxhqh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_faj7g"]
+texture = ExtResource("6_fgtr1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mkwpc"]
+texture = ExtResource("7_c8s15")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ry6vb"]
+texture = ExtResource("8_3c24x")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oxn3i"]
+texture = ExtResource("9_xq8ge")
+
+[node name="privacy_signup" type="Control" unique_id=898485514]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("privacy_signup_nav")
+
+[node name="Panel2" type="Panel" parent="." unique_id=489254751]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_7k63w")
+
+[node name="Label" type="Label" parent="Panel2" unique_id=2060333680]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -106.0
+offset_top = 4.0
+offset_right = 114.0
+offset_bottom = 63.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_caonl")
+theme_override_font_sizes/font_size = 38
+text = "PRIVACY POLICY"
+horizontal_alignment = 1
+
+[node name="Panel3" type="Panel" parent="." unique_id=517802654]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 64.0
+offset_right = 452.0
+offset_bottom = 131.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q726t")
+
+[node name="Label" type="Label" parent="Panel3" unique_id=707271561]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 12.0
+offset_right = 345.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "Please read these terms and conditions 
+carefully before using HabiHero."
+horizontal_alignment = 1
+
+[node name="Panel4" type="Panel" parent="." unique_id=1536182344]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 144.0
+offset_right = 496.0
+offset_bottom = 719.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q726t")
+
+[node name="Label2" type="Label" parent="Panel4" unique_id=1242895444]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 28.0
+offset_right = 370.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_4bmet")
+theme_override_font_sizes/font_size = 11
+text = "We collect information you provide directly to us, such as your 
+name, email address, and in-app preferences. We may also 
+collect device information, game progress, and usage data to 
+improve your experience."
+
+[node name="Label2" type="Label" parent="Panel4/Label2" unique_id=1218239260]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -21.0
+offset_right = 181.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_caonl")
+theme_override_font_sizes/font_size = 11
+text = "1. INFORMATION WE COLLECT"
+
+[node name="Label3" type="Label" parent="Panel4" unique_id=440246435]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 196.0
+offset_right = 157.0
+offset_bottom = 216.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_caonl")
+theme_override_font_sizes/font_size = 11
+text = "3. INFORMATION SHARING"
+
+[node name="Label3" type="Label" parent="Panel4/Label3" unique_id=230096333]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 20.0
+offset_right = 367.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_4bmet")
+theme_override_font_sizes/font_size = 11
+text = "We do not sell your personal information. We may share your 
+information with trusted service providers who help us operate our 
+app, or when required by law or to protect our rights and users."
+
+[node name="Label4" type="Label" parent="Panel4/Label3" unique_id=724292777]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 105.0
+offset_right = 348.0
+offset_bottom = 159.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_4bmet")
+theme_override_font_sizes/font_size = 11
+text = "We implement appropriate security measures to protect your 
+information from unauthorized access, alteration, disclosure, or
+ destruction."
+
+[node name="Label2" type="Label" parent="Panel4/Label3/Label4" unique_id=2146159994]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -19.0
+offset_right = 95.0
+offset_bottom = -3.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_caonl")
+theme_override_font_sizes/font_size = 11
+text = "4. DATA SECURITY"
+
+[node name="Label4" type="Label" parent="Panel4" unique_id=237423619]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 125.0
+offset_right = 370.0
+offset_bottom = 179.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_4bmet")
+theme_override_font_sizes/font_size = 11
+text = "We use your information to provide and improve our services, 
+personalize your experience, process transactions, communicate 
+with you, and ensure the security of our app."
+
+[node name="Label2" type="Label" parent="Panel4/Label4" unique_id=1595962555]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -15.0
+offset_right = 198.0
+offset_bottom = 1.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_caonl")
+theme_override_font_sizes/font_size = 11
+text = "2. HOW WE USE YOUR INFORMATION"
+
+[node name="Label5" type="Label" parent="Panel4" unique_id=1991823605]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 384.0
+offset_right = 375.0
+offset_bottom = 438.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_4bmet")
+theme_override_font_sizes/font_size = 11
+text = "You can update or delete your account information at any time 
+through the app settings. You may also contact us if you have any 
+privacy concerns."
+
+[node name="Label2" type="Label" parent="Panel4/Label5" unique_id=1724508401]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -16.0
+offset_right = 67.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_caonl")
+theme_override_font_sizes/font_size = 11
+text = "5. YOUR CHOICES"
+
+[node name="Label6" type="Label" parent="Panel4" unique_id=17739083]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 449.0
+offset_right = 96.0
+offset_bottom = 465.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("3_caonl")
+theme_override_font_sizes/font_size = 11
+text = "6. CHILDREN'S PRIVACY"
+
+[node name="Label5" type="Label" parent="Panel4/Label6" unique_id=237605327]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 22.0
+offset_right = 369.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_4bmet")
+theme_override_font_sizes/font_size = 11
+text = "HabiHero is not intended for children under 13. We do not knowingly 
+collect personal information from children under 13."
+
+[node name="CheckBox" type="CheckBox" parent="Panel4" unique_id=633290160]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 535.0
+offset_right = 406.0
+offset_bottom = 562.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("2_4bmet")
+theme_override_font_sizes/font_size = 13
+text = "I have read and agree to the Terms and Conditions."
+
+[node name="Button2" type="Button" parent="Panel4" unique_id=970226486]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -148.5
+offset_top = 15.0
+offset_right = 148.5
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_caonl")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_l2lyn")
+text = "AGREE AND CONTINUE"
+
+[node name="Panel" type="Panel" parent="Panel4" unique_id=1192050189]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 18.0
+offset_right = 457.0
+offset_bottom = 88.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_0jf6y")
+
+[node name="Panel2" type="Panel" parent="Panel4" unique_id=2000602463]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 116.0
+offset_right = 459.0
+offset_bottom = 178.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_nntod")
+
+[node name="Panel3" type="Panel" parent="Panel4" unique_id=215518537]
+layout_mode = 0
+offset_left = 390.0
+offset_top = 200.0
+offset_right = 463.0
+offset_bottom = 270.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_faj7g")
+
+[node name="Panel4" type="Panel" parent="Panel4" unique_id=1583156241]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 292.0
+offset_right = 454.0
+offset_bottom = 350.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_mkwpc")
+
+[node name="Panel5" type="Panel" parent="Panel4" unique_id=2065634486]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 371.0
+offset_right = 459.0
+offset_bottom = 441.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ry6vb")
+
+[node name="Panel6" type="Panel" parent="Panel4" unique_id=1347775056]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 456.0
+offset_right = 451.0
+offset_bottom = 519.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_oxn3i")

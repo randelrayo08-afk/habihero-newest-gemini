@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://d1dre4twgfyi3"]
+
+[ext_resource type="Texture2D" uid="uid://6jqw1cf76uuq" path="res://ChatGPT Image Aug 10, 2026, 12_55_20 PM (1).png" id="1_5k6mp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2folj"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(0, 0, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dg205"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(307, 0, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qc5yk"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(614, 0, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbxet"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(921, 0, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ud6u4"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(1228, 0, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smseu"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(0, 497, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cj0eu"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(307, 497, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7tsg"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(614, 497, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rgxk"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(921, 497, 307, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07vin"]
+atlas = ExtResource("1_5k6mp")
+region = Rect2(1228, 497, 307, 497)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8sq1j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2folj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dg205")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qc5yk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbxet")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ud6u4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smseu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cj0eu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7tsg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rgxk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07vin")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="happy" type="Node2D" unique_id=905774673]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2118288008]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=168769899]
+position = Vector2(1.5000114, 1.9999905)
+scale = Vector2(1.247557, 1.2354126)
+sprite_frames = SubResource("SpriteFrames_8sq1j")
+frame_progress = 0.83041966
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D/AnimatedSprite2D" unique_id=899723806]
+offset = Vector2(0.5, 0.5)
+limit_left = -320
+limit_top = -187
+limit_right = 320
+limit_bottom = 180

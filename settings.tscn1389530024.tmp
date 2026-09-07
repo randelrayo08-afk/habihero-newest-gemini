@@ -1,0 +1,561 @@
+[gd_scene format=3 uid="uid://csrjoo1iwgdf4"]
+
+[ext_resource type="Texture2D" uid="uid://bc5708bh5jiju" path="res://TERMS AND CONDITION.png" id="1_x2hje"]
+[ext_resource type="Texture2D" uid="uid://g2tbe3185ufg" path="res://back.png" id="2_nkug2"]
+[ext_resource type="FontFile" uid="uid://c2tnwo3myvnjv" path="res://Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="4_gc0em"]
+[ext_resource type="Texture2D" uid="uid://dab7gnrglgff5" path="res://man (1).png" id="5_cj1lu"]
+[ext_resource type="Texture2D" uid="uid://dxe6w6rfk1mc0" path="res://user (1).png" id="6_71mqq"]
+[ext_resource type="Texture2D" uid="uid://d058aufc73p46" path="res://key.png" id="7_3j6r5"]
+[ext_resource type="FontFile" uid="uid://djsjyhpapxwr4" path="res://Poppins/Poppins-Medium.ttf" id="7_3lj6o"]
+[ext_resource type="Texture2D" uid="uid://dvo8fqyjbrei1" path="res://audio.png" id="9_6mhpt"]
+[ext_resource type="Texture2D" uid="uid://cr723ucronxtw" path="res://music (1).png" id="10_1k4ii"]
+[ext_resource type="Texture2D" uid="uid://dful7fmhix6nx" path="res://bell (1).png" id="10_ohexs"]
+[ext_resource type="Texture2D" uid="uid://c01i1qnwbsqqr" path="res://file.png" id="12_82xqq"]
+[ext_resource type="Texture2D" uid="uid://qab8jgsebfj" path="res://info.png" id="12_tk3m0"]
+[ext_resource type="Texture2D" uid="uid://bueluwetej6gc" path="res://privacy.png" id="13_7eiv2"]
+[ext_resource type="Texture2D" uid="uid://bn2bvsvtu1v0i" path="res://faq.png" id="13_y43lv"]
+[ext_resource type="FontFile" uid="uid://q1xwtxbsp3pu" path="res://Poppins/Poppins-Black.ttf" id="16_fdp2d"]
+[ext_resource type="Texture2D" uid="uid://dv8xj5tq6j3xf" path="res://logout.png" id="17_e0y8d"]
+[ext_resource type="Script" uid="uid://bab6c2281d5ou" path="res://shared_nav.gd" id="18_snav"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkug2"]
+texture = ExtResource("1_x2hje")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gc0em"]
+bg_color = Color(0.9372549, 0.78431374, 0.5254902, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0, 0, 0, 0.8)
+shadow_size = 3
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cj1lu"]
+bg_color = Color(0.40784314, 0.24313726, 0.4, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_71mqq"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fdp2d"]
+texture = ExtResource("12_tk3m0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y43lv"]
+texture = ExtResource("12_82xqq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7eiv2"]
+texture = ExtResource("13_7eiv2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tk3m0"]
+texture = ExtResource("13_y43lv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3ykye"]
+texture = ExtResource("2_nkug2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_71mqq"]
+texture = ExtResource("5_cj1lu")
+region_rect = Rect2(0, 0, 512, 512)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3j6r5"]
+texture = ExtResource("6_71mqq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3lj6o"]
+texture = ExtResource("7_3j6r5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6mhpt"]
+texture = ExtResource("9_6mhpt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1k4ii"]
+texture = ExtResource("10_1k4ii")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_82xqq"]
+texture = ExtResource("10_ohexs")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0y8d"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e0y8d"]
+texture = ExtResource("17_e0y8d")
+
+[node name="Settings" type="Control" unique_id=338204266]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("18_snav")
+
+[node name="Panel" type="Panel" parent="." unique_id=947207163]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_nkug2")
+
+[node name="Panel4" type="Panel" parent="Panel" unique_id=1503855376]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 520.0
+offset_right = 454.0
+offset_bottom = 653.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gc0em")
+
+[node name="Panel" type="Panel" parent="Panel/Panel4" unique_id=1602435422]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -18.0
+offset_right = 194.0
+offset_bottom = 19.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cj1lu")
+
+[node name="Label" type="Label" parent="Panel/Panel4/Panel" unique_id=931844320]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -1.0
+offset_right = 130.0
+offset_bottom = 36.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_gc0em")
+theme_override_font_sizes/font_size = 25
+text = "INFORMATION"
+
+[node name="aboutset_but" type="Button" parent="Panel/Panel4" unique_id=2058484512]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 28.0
+offset_right = 90.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel" type="Panel" parent="Panel/Panel4/aboutset_but" unique_id=1627269615]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 11.0
+offset_right = 61.0
+offset_bottom = 58.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fdp2d")
+
+[node name="Label" type="Label" parent="Panel/Panel4/aboutset_but/Panel" unique_id=21625390]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 49.0
+offset_right = 48.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = -6
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 10
+text = "About
+HabiHero"
+horizontal_alignment = 1
+
+[node name="termsset_but" type="Button" parent="Panel/Panel4" unique_id=847300614]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 27.0
+offset_right = 181.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel" type="Panel" parent="Panel/Panel4/termsset_but" unique_id=1427706380]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 8.0
+offset_right = 61.0
+offset_bottom = 59.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_y43lv")
+
+[node name="Label" type="Label" parent="Panel/Panel4/termsset_but/Panel" unique_id=2134585645]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 52.0
+offset_right = 54.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = -6
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 10
+text = "Terms & 
+Conditions"
+horizontal_alignment = 1
+
+[node name="privacyset_but" type="Button" parent="Panel/Panel4" unique_id=1037230345]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 28.0
+offset_right = 272.0
+offset_bottom = 115.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel" type="Panel" parent="Panel/Panel4/privacyset_but" unique_id=1958552981]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 6.0
+offset_right = 68.0
+offset_bottom = 59.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_7eiv2")
+
+[node name="Label" type="Label" parent="Panel/Panel4/privacyset_but/Panel" unique_id=1980073074]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 53.0
+offset_right = 56.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = -6
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 10
+text = "Privacy 
+Policy"
+horizontal_alignment = 1
+
+[node name="helpset_but" type="Button" parent="Panel/Panel4" unique_id=460828992]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 28.0
+offset_right = 363.0
+offset_bottom = 115.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel" type="Panel" parent="Panel/Panel4/helpset_but" unique_id=754436048]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 6.0
+offset_right = 65.0
+offset_bottom = 59.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_tk3m0")
+
+[node name="Label" type="Label" parent="Panel/Panel4/helpset_but/Panel" unique_id=389070524]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 52.0
+offset_right = 51.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = -6
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 10
+text = "Help & 
+Support"
+horizontal_alignment = 1
+
+[node name="sett2home" type="Button" parent="." unique_id=963374611]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 63.0
+offset_bottom = 73.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_3ykye")
+
+[node name="Label" type="Label" parent="." unique_id=210900581]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 6.0
+offset_right = 344.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("4_gc0em")
+theme_override_font_sizes/font_size = 40
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="Panel2" type="Panel" parent="." unique_id=876400635]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 109.0
+offset_right = 452.0
+offset_bottom = 237.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gc0em")
+
+[node name="Panel" type="Panel" parent="Panel2" unique_id=726746974]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -17.0
+offset_right = 137.0
+offset_bottom = 20.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cj1lu")
+
+[node name="Label" type="Label" parent="Panel2/Panel" unique_id=1801600370]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -1.0
+offset_right = 130.0
+offset_bottom = 36.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_gc0em")
+theme_override_font_sizes/font_size = 25
+text = "ACCOUNT"
+
+[node name="Panel2" type="Panel" parent="Panel2" unique_id=1120252445]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 31.0
+offset_right = 99.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_71mqq")
+
+[node name="Panel3" type="Panel" parent="Panel2" unique_id=821730305]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 34.0
+offset_right = 150.0
+offset_bottom = 59.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_3j6r5")
+
+[node name="Label" type="Label" parent="Panel2/Panel3" unique_id=14556508]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 1.0
+offset_right = 124.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 16
+text = "Edit Profile"
+
+[node name="Label" type="Label" parent="Panel2/Panel3/Label" unique_id=1100405312]
+layout_mode = 0
+offset_left = 176.0
+offset_top = -5.0
+offset_right = 187.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("4_gc0em")
+theme_override_font_sizes/font_size = 18
+text = ">"
+
+[node name="edit_but" type="Button" parent="Panel2" unique_id=870697457]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 26.0
+offset_right = 363.0
+offset_bottom = 66.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel4" type="Panel" parent="Panel2" unique_id=1833094057]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 79.0
+offset_right = 146.0
+offset_bottom = 102.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_3lj6o")
+
+[node name="Label" type="Label" parent="Panel2/Panel4" unique_id=1469692636]
+layout_mode = 0
+offset_left = 40.0
+offset_top = -1.0
+offset_right = 187.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 16
+text = "Change Password"
+
+[node name="Label" type="Label" parent="Panel2/Panel4/Label" unique_id=844747776]
+layout_mode = 0
+offset_left = 177.0
+offset_top = -4.0
+offset_right = 188.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("4_gc0em")
+theme_override_font_sizes/font_size = 18
+text = ">"
+
+[node name="Button2" type="Button" parent="Panel2" unique_id=1490778081]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 70.0
+offset_right = 362.0
+offset_bottom = 110.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel3" type="Panel" parent="." unique_id=975369636]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 291.0
+offset_right = 453.0
+offset_bottom = 467.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gc0em")
+
+[node name="Panel" type="Panel" parent="Panel3" unique_id=1837907940]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -18.0
+offset_right = 219.0
+offset_bottom = 19.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cj1lu")
+
+[node name="Label" type="Label" parent="Panel3/Panel" unique_id=29807521]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -1.0
+offset_right = 130.0
+offset_bottom = 36.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_gc0em")
+theme_override_font_sizes/font_size = 25
+text = "GAME SETTINGS"
+
+[node name="Button2" type="Button" parent="Panel3" unique_id=1772503269]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 29.0
+offset_right = 354.0
+offset_bottom = 69.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel4" type="Panel" parent="Panel3/Button2" unique_id=172942178]
+layout_mode = 0
+offset_left = -7.0
+offset_top = 3.0
+offset_right = 24.0
+offset_bottom = 34.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_6mhpt")
+
+[node name="Label" type="Label" parent="Panel3/Button2/Panel4" unique_id=552305291]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 6.0
+offset_right = 160.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 16
+text = "Sound Effects"
+
+[node name="CheckButton" type="CheckButton" parent="Panel3/Button2" unique_id=1974187653]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 6.0
+offset_right = 285.0
+offset_bottom = 30.0
+
+[node name="Button3" type="Button" parent="Panel3" unique_id=847170941]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 76.0
+offset_right = 354.0
+offset_bottom = 116.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel4" type="Panel" parent="Panel3/Button3" unique_id=161612180]
+layout_mode = 0
+offset_left = -17.0
+offset_top = -1.0
+offset_right = 25.0
+offset_bottom = 39.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_1k4ii")
+
+[node name="Label" type="Label" parent="Panel3/Button3/Panel4" unique_id=1177693824]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 9.0
+offset_right = 169.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 16
+text = "Background Music"
+
+[node name="CheckButton" type="CheckButton" parent="Panel3/Button3/Panel4/Label" unique_id=613381680]
+layout_mode = 0
+offset_left = 198.0
+offset_right = 242.0
+offset_bottom = 24.0
+
+[node name="Button4" type="Button" parent="Panel3" unique_id=1558690377]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 123.0
+offset_right = 354.0
+offset_bottom = 163.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_71mqq")
+
+[node name="Panel4" type="Panel" parent="Panel3/Button4" unique_id=1984722934]
+layout_mode = 0
+offset_left = -13.0
+offset_top = 6.0
+offset_right = 18.0
+offset_bottom = 37.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_82xqq")
+
+[node name="Label" type="Label" parent="Panel3/Button4/Panel4" unique_id=1897840995]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 4.0
+offset_right = 165.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("7_3lj6o")
+theme_override_font_sizes/font_size = 16
+text = "Notifications"
+
+[node name="CheckButton" type="CheckButton" parent="Panel3/Button4/Panel4/Label" unique_id=447705574]
+layout_mode = 0
+offset_left = 200.0
+offset_top = -2.0
+offset_right = 244.0
+offset_bottom = 22.0
+
+[node name="logoutbut" type="Button" parent="." unique_id=181750501]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -133.0
+offset_top = -106.0
+offset_right = 135.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("16_fdp2d")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_e0y8d")
+text = "            Log Out"
+
+[node name="Panel" type="Panel" parent="logoutbut" unique_id=1356005540]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 8.0
+offset_right = 110.0
+offset_bottom = 48.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_e0y8d")

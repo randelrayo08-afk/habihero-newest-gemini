@@ -1,0 +1,260 @@
+[gd_scene format=3 uid="uid://bt4452ci6xjga"]
+
+[ext_resource type="Texture2D" uid="uid://bc5708bh5jiju" path="res://TERMS AND CONDITION.png" id="1_x5r8a"]
+[ext_resource type="Texture2D" uid="uid://g2tbe3185ufg" path="res://back.png" id="2_5tp7k"]
+[ext_resource type="FontFile" uid="uid://dh8gtpvo4mt3o" path="res://CherryBombOne-Regular.ttf" id="4_7n2fl"]
+[ext_resource type="Texture2D" uid="uid://cp835ybruuxwh" path="res://target.png" id="5_qkww8"]
+[ext_resource type="Texture2D" uid="uid://cu4bt7ep40e1n" path="res://44e63a2d-eb4e-4783-9ac0-acace7b67496.png" id="6_j2lv4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xdudg"]
+texture = ExtResource("1_x5r8a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h3du1"]
+texture = ExtResource("2_5tp7k")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lxcma"]
+bg_color = Color(0.9372549, 0.78431374, 0.5254902, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0, 0, 0, 0.8)
+shadow_size = 3
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_idplo"]
+texture = ExtResource("5_qkww8")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wojjo"]
+bg_color = Color(0.078431375, 0.22745098, 0.48235294, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gc26m"]
+texture = ExtResource("6_j2lv4")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uavuk"]
+bg_color = Color(0.1882353, 0.41568628, 0.0627451, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gg5if"]
+bg_color = Color(0.40784314, 0.24313726, 0.4, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="About" type="Control" unique_id=1355810056]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="." unique_id=240500607]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xdudg")
+
+[node name="Button" type="Button" parent="Panel2" unique_id=1452124368]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 63.0
+offset_bottom = 73.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_h3du1")
+
+[node name="Label" type="Label" parent="Panel2" unique_id=1976681969]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -106.0
+offset_top = 4.0
+offset_right = 114.0
+offset_bottom = 63.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("4_7n2fl")
+theme_override_font_sizes/font_size = 38
+text = "About HabiHero"
+horizontal_alignment = 1
+
+[node name="Panel3" type="Panel" parent="Panel2" unique_id=1867999079]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 92.0
+offset_right = 449.0
+offset_bottom = 185.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxcma")
+
+[node name="Label" type="Label" parent="Panel2/Panel3" unique_id=1023213905]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 15.0
+offset_right = 375.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "HabiHero is a fun and interactive app that helps students 
+build good habits, strengthen their values, and grow in 
+faith through daily challenges and rewarding experiences."
+horizontal_alignment = 1
+
+[node name="Panel4" type="Panel" parent="Panel2" unique_id=293313710]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 227.0
+offset_right = 450.0
+offset_bottom = 318.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxcma")
+
+[node name="Label2" type="Label" parent="Panel2/Panel4" unique_id=1524746037]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 17.0
+offset_right = 376.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "To encourage students to grow in learning, 
+values, and faith by making positive habits 
+fun and rewarding."
+
+[node name="Panel" type="Panel" parent="Panel2/Panel4" unique_id=269694308]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 16.0
+offset_right = 90.0
+offset_bottom = 71.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_idplo")
+
+[node name="Panel5" type="Panel" parent="Panel2" unique_id=6658216]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 516.0
+offset_right = 460.0
+offset_bottom = 687.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxcma")
+
+[node name="Panel" type="Panel" parent="Panel2/Panel5" unique_id=760307721]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -21.0
+offset_right = 187.0
+offset_bottom = 16.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wojjo")
+
+[node name="Label" type="Label" parent="Panel2/Panel5/Panel" unique_id=1144705853]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 114.0
+offset_bottom = 42.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_7n2fl")
+theme_override_font_sizes/font_size = 16
+text = "WHAT IS HABIHERO?"
+
+[node name="Panel2" type="Panel" parent="Panel2/Panel5" unique_id=473944994]
+layout_mode = 0
+offset_left = -13.0
+offset_top = -11.0
+offset_right = 122.0
+offset_bottom = 188.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gc26m")
+
+[node name="Panel6" type="Panel" parent="Panel2" unique_id=1198505858]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 366.0
+offset_right = 458.0
+offset_bottom = 457.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lxcma")
+
+[node name="Label2" type="Label" parent="Panel2/Panel6" unique_id=881381432]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 17.0
+offset_right = 376.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "To inspire students to become responsible,
+ compassionate, and faithful individuals 
+who live as children created in God's image."
+
+[node name="Label2" type="Label" parent="Panel2/Panel6/Label2" unique_id=95790052]
+layout_mode = 0
+offset_left = -11.0
+offset_top = 179.0
+offset_right = 284.0
+offset_bottom = 260.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "HabiHero is your daily adventure companion 
+where completing good habits earns rewards,
+ builds character, and helps you grow 
+into the best version of yourself."
+
+[node name="Panel" type="Panel" parent="Panel2/Panel6" unique_id=148100292]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 22.0
+offset_right = 90.0
+offset_bottom = 77.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_idplo")
+
+[node name="Panel" type="Panel" parent="Panel2" unique_id=1141445976]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 346.0
+offset_right = 197.0
+offset_bottom = 383.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_uavuk")
+
+[node name="Label" type="Label" parent="Panel2/Panel" unique_id=946962842]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 114.0
+offset_bottom = 41.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_7n2fl")
+theme_override_font_sizes/font_size = 16
+text = "OUR VISSION"
+
+[node name="Panel2" type="Panel" parent="Panel2" unique_id=1001539207]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 204.0
+offset_right = 191.0
+offset_bottom = 241.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gg5if")
+
+[node name="Label" type="Label" parent="Panel2/Panel2" unique_id=2138131579]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 114.0
+offset_bottom = 41.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_7n2fl")
+theme_override_font_sizes/font_size = 16
+text = "OUR MISSION"

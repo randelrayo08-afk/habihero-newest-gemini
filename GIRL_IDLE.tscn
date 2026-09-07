@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://c5fasl3dgwr61"]
+
+[ext_resource type="Texture2D" uid="uid://buhpsgna60mjh" path="res://GIRL1.png" id="1_girl1"]
+[ext_resource type="Texture2D" uid="uid://yfs8221cau2s" path="res://GIRL2.png" id="2_girl2"]
+[ext_resource type="Texture2D" uid="uid://dl7sa4d2t3bv4" path="res://GIRL3.png" id="3_girl3"]
+[ext_resource type="Texture2D" uid="uid://srtfvtcmm1yy" path="res://GIRL4.png" id="4_girl4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_girl_idle"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("1_girl1")
+}, {
+"duration": 0.2,
+"texture": ExtResource("2_girl2")
+}, {
+"duration": 0.2,
+"texture": ExtResource("3_girl3")
+}, {
+"duration": 0.2,
+"texture": ExtResource("4_girl4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GIRL_IDLE" type="Node2D" unique_id=1506198048]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=778273494]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=25773075]
+sprite_frames = SubResource("SpriteFrames_girl_idle")
+autoplay = "default"
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D/AnimatedSprite2D" unique_id=355893870]

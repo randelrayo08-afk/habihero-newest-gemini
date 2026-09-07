@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="ADVENTURE_HABI"
+run/main_scene="uid://c5m6stgh18jvx"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[audio]
+
+driver/enable_input=true
+
+[autoload]
+
+FirebaseRTDB="*res://FirebaseRTDB.gd"
+FirebaseAuthManager="*res://firebase_auth_manager.gd"
+UserSession="*res://user_session.gd"
+HabiBackend="*res://habi_backend.gd"
+NavigationHistory="*res://navigation_history.gd"
+RuntimeBackFix="*res://runtime_back_fix.gd"
+ButtonHoverEnhancer="*res://runtime/button_hover_enhancer.gd"
+UITheme="*res://ui_theme.gd"
+ResponsiveUI="*res://responsive_ui.gd"
+AdventureAudio="*res://adventure_audio.gd"
+AudioManager="*res://autoloads/audio_manager.gd"
+
+[display]
+
+window/size/viewport_width=520
+window/size/viewport_height=800
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
+window/handheld/orientation=1
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-livekit/plugin.cfg")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+textures/vram_compression/import_etc2_astc=true

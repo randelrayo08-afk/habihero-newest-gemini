@@ -1,0 +1,319 @@
+[gd_scene format=3 uid="uid://cs76l7xv0axol"]
+
+[ext_resource type="Texture2D" uid="uid://nfes0x6cy2vq" path="res://JOURNAL.png" id="1_mfopc"]
+[ext_resource type="Texture2D" uid="uid://cr7b8iamlfcbi" path="res://home.png" id="2_pmo0p"]
+[ext_resource type="Texture2D" uid="uid://cumr8h76mb8n0" path="res://bar-graph.png" id="3_ddldy"]
+[ext_resource type="Texture2D" uid="uid://drkhe03qaqx8h" path="res://open-book.png" id="4_hqqaa"]
+[ext_resource type="Texture2D" uid="uid://dw48km5hjoqir" path="res://store.png" id="5_kkyki"]
+[ext_resource type="Texture2D" uid="uid://bxyw6k31via3r" path="res://chat.png" id="6_543vq"]
+[ext_resource type="FontFile" uid="uid://q1xwtxbsp3pu" path="res://Poppins/Poppins-Black.ttf" id="7_br8rq"]
+[ext_resource type="FontFile" uid="uid://djsjyhpapxwr4" path="res://Poppins/Poppins-Medium.ttf" id="8_pmo0p"]
+[ext_resource type="FontFile" uid="uid://25vk7fvuq4rs" path="res://Poppins/Poppins-Bold.ttf" id="9_ddldy"]
+[ext_resource type="Script" uid="uid://bab6c2281d5ou" path="res://shared_nav.gd" id="10_snav"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hqd1l"]
+texture = ExtResource("1_mfopc")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_somhh"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ix2y"]
+texture = ExtResource("2_pmo0p")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rhl61"]
+texture = ExtResource("3_ddldy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kqn5c"]
+texture = ExtResource("4_hqqaa")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sood5"]
+texture = ExtResource("5_kkyki")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e6yhg"]
+texture = ExtResource("6_543vq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hqqaa"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ddldy"]
+bg_color = Color(0.99607843, 0.95686275, 0.8980392, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kkyki"]
+bg_color = Color(0.6901961, 0.6901961, 0.6901961, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_543vq"]
+bg_color = Color(0.23753905, 0.23753914, 0.23753911, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_br8rq"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Journal" type="Control" unique_id=1042257843]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_snav")
+
+[node name="Panel" type="Panel" parent="." unique_id=1660853114]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_hqd1l")
+
+[node name="Panel2" type="Panel" parent="." unique_id=1058621360]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 701.0
+offset_right = 506.0
+offset_bottom = 784.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_somhh")
+
+[node name="Button" type="Button" parent="Panel2" unique_id=847261828]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 9.0
+offset_right = 79.0
+offset_bottom = 52.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0ix2y")
+
+[node name="Label" type="Label" parent="Panel2/Button" unique_id=1964214000]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 41.0
+offset_right = 49.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Home"
+
+[node name="Button2" type="Button" parent="Panel2" unique_id=2018788144]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 10.0
+offset_right = 169.0
+offset_bottom = 53.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_rhl61")
+
+[node name="Label" type="Label" parent="Panel2/Button2" unique_id=589392960]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 41.0
+offset_right = 60.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Progress"
+
+[node name="Button3" type="Button" parent="Panel2" unique_id=1433676973]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -73.0
+offset_right = 23.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxTexture_kqn5c")
+
+[node name="Label" type="Label" parent="Panel2/Button3" unique_id=2109611324]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 41.0
+offset_right = 52.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Journal"
+
+[node name="Button4" type="Button" parent="Panel2" unique_id=1415283971]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 11.0
+offset_right = 359.0
+offset_bottom = 54.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_sood5")
+
+[node name="Label" type="Label" parent="Panel2/Button4" unique_id=91270038]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 41.0
+offset_right = 44.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Shop"
+
+[node name="Button5" type="Button" parent="Panel2" unique_id=2112508789]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 11.0
+offset_right = 449.0
+offset_bottom = 54.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_e6yhg")
+
+[node name="Label" type="Label" parent="Panel2/Button5" unique_id=1372263360]
+layout_mode = 0
+offset_left = -10.0
+offset_top = 41.0
+offset_right = 63.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Guidance"
+
+[node name="Label" type="Label" parent="." unique_id=405084068]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -165.0
+offset_top = 76.0
+offset_right = 169.0
+offset_bottom = 147.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("7_br8rq")
+theme_override_font_sizes/font_size = 50
+text = "MY JOURNAL"
+
+[node name="Label" type="Label" parent="Label" unique_id=307447337]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = -1.0
+offset_right = 121.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("8_pmo0p")
+theme_override_font_sizes/font_size = 17
+text = "Your thoughts are safe here."
+
+[node name="new entry" type="Button" parent="." unique_id=2069127589]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 218.0
+offset_right = 434.0
+offset_bottom = 283.0
+theme_override_constants/outline_size = 3
+theme_override_constants/align_to_largest_stylebox = 0
+theme_override_fonts/font = ExtResource("9_ddldy")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_hqqaa")
+text = "new entry"
+
+[node name="Panel3" type="Panel" parent="." unique_id=1892048554]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 320.0
+offset_right = 495.0
+offset_bottom = 681.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ddldy")
+
+[node name="Panel" type="Panel" parent="Panel3" unique_id=939050012]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 447.0
+offset_bottom = 349.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kkyki")
+
+[node name="VScrollBar" type="VScrollBar" parent="Panel3" unique_id=377099332]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 6.0
+offset_right = 529.0
+offset_bottom = 286.0
+theme_override_styles/scroll = SubResource("StyleBoxFlat_543vq")
+
+[node name="Label" type="Label" parent="Panel3" unique_id=913393733]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -191.0
+offset_top = -357.0
+offset_right = 51.0
+offset_bottom = -321.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("8_pmo0p")
+theme_override_font_sizes/font_size = 25
+text = "PAST JOURNALS"
+
+[node name="Panel2" type="Panel" parent="Panel3" unique_id=626894380]
+layout_mode = 0
+offset_left = 530.0
+offset_top = -2.0
+offset_right = 936.0
+offset_bottom = 141.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_br8rq")
+
+[node name="Panel2" type="Panel" parent="Panel3/Panel2" unique_id=2104716006]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 147.0
+offset_right = 407.0
+offset_bottom = 290.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_br8rq")

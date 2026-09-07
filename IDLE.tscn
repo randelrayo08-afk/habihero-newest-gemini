@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://1ik7qwpbgqxb"]
+
+[ext_resource type="Texture2D" uid="uid://b3dt4ygjag255" path="res://2f42f0bc-c1f1-4e15-b250-cabe389f2803.png" id="1_era6x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpcpd"]
+atlas = ExtResource("1_era6x")
+region = Rect2(0, 0, 314, 492)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttdft"]
+atlas = ExtResource("1_era6x")
+region = Rect2(314, 0, 314, 492)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l717l"]
+atlas = ExtResource("1_era6x")
+region = Rect2(628, 0, 314, 492)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x73ow"]
+atlas = ExtResource("1_era6x")
+region = Rect2(960, 0, 320, 492)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwn4a"]
+atlas = ExtResource("1_era6x")
+region = Rect2(1308, 0, 327, 492)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bvbah"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpcpd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ttdft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l717l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x73ow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwn4a")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="IDLE" type="Node2D" unique_id=1920758705]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=94995917]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1353164603]
+position = Vector2(266, 430.71872)
+scale = Vector2(0.97770697, 1.0760925)
+sprite_frames = SubResource("SpriteFrames_bvbah")
+frame_progress = 0.34220365

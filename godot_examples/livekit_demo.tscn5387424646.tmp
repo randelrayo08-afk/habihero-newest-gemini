@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cav4nlqqugf27"]
+
+[ext_resource type="Script" uid="uid://blse1lgg3v0s" path="res://godot_examples/livekit_demo.gd" id="1"]
+
+[node name="LiveKitDemo" type="Node" unique_id=1812852858]
+script = ExtResource("1")
+backend_url = null

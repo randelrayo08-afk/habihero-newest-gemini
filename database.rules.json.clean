@@ -1,0 +1,126 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "conversations": {
+      ".indexOn": ["userId", "lastMessageAt"],
+      ".read": true,
+      ".write": true,
+      "$convId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['id', 'userId', 'createdAt'])",
+        "id": { ".validate": "newData.isString()" },
+        "userId": { ".validate": "newData.isString()" },
+        "lastMessage": { ".validate": "newData.isString() || newData.val() === null" },
+        "lastMessageAt": { ".validate": "newData.isString()" },
+        "unread": { ".validate": "newData.isNumber()" },
+        "createdAt": { ".validate": "newData.isString()" },
+        "messages": {
+          ".read": true,
+          ".write": true,
+          "$msgId": {
+            ".read": true,
+            ".write": true,
+            ".validate": "newData.hasChildren(['id', 'conversationId', 'senderId', 'message', 'timestamp'])",
+            "id": { ".validate": "newData.isString()" },
+            "conversationId": { ".validate": "newData.isString()" },
+            "senderId": { ".validate": "newData.isString()" },
+            "receiverId": { ".validate": "newData.isString()" },
+            "message": { ".validate": "newData.isString()" },
+            "timestamp": { ".validate": "newData.isString()" },
+            "read": { ".validate": "newData.isBoolean()" },
+            "type": { ".validate": "newData.isString()" }
+          }
+        }
+      }
+    },
+    "messages": {
+      ".indexOn": ["conversationId", "senderId", "receiverId", "timestamp"],
+      ".read": true,
+      ".write": true,
+      "$msgId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['id', 'conversationId', 'senderId', 'message', 'timestamp'])",
+        "id": { ".validate": "newData.isString()" },
+        "conversationId": { ".validate": "newData.isString()" },
+        "senderId": { ".validate": "newData.isString()" },
+        "receiverId": { ".validate": "newData.isString()" },
+        "message": { ".validate": "newData.isString()" },
+        "timestamp": { ".validate": "newData.isString()" },
+        "read": { ".validate": "newData.isBoolean()" },
+        "type": { ".validate": "newData.isString()" }
+      }
+    },
+    "users": {
+      ".read": true,
+      ".write": true,
+      "$uid": {
+        ".read": true,
+        ".write": true,
+        "profile": {
+          ".read": true,
+          ".write": true,
+          "level": { ".validate": "newData.isNumber()" },
+          "experience": { ".validate": "newData.isNumber()" },
+          "email": { ".validate": "newData.isString() || newData.val() === null" },
+          "name": { ".validate": "newData.isString() || newData.val() === null" },
+          "createdAt": { ".validate": "newData.isString() || newData.val() === null" },
+          "updatedAt": { ".validate": "newData.isString() || newData.val() === null" }
+        },
+        "journal": {
+          ".read": true,
+          ".write": true,
+          "$entryId": {
+            ".read": true,
+            ".write": true,
+            ".validate": "newData.hasChildren(['entry', 'created_at'])",
+            "user_id": { ".validate": "newData.isString()" },
+            "entry": { ".validate": "newData.isString() && newData.val().length() <= 300" },
+            "created_at": { ".validate": "newData.isString()" },
+            "timestamp": { ".validate": "newData.isString() || newData.val() === null" }
+          }
+        },
+        "moodcheck": {
+          ".read": true,
+          ".write": true,
+          "$moodId": {
+            ".read": true,
+            ".write": true,
+            ".validate": "newData.hasChildren(['mood', 'date'])",
+            "mood": { ".validate": "newData.isString()" },
+            "date": { ".validate": "newData.isString()" },
+            "selected_at": { ".validate": "newData.isString() || newData.val() === null" }
+          }
+        },
+        "conversation": {
+          ".read": true,
+          ".write": true,
+          "id": { ".validate": "newData.isString()" },
+          "userId": { ".validate": "newData.isString()" },
+          "lastMessage": { ".validate": "newData.isString() || newData.val() === null" },
+          "lastMessageAt": { ".validate": "newData.isString() || newData.val() === null" },
+          "createdAt": { ".validate": "newData.isString()" }
+        },
+        "messages": {
+          ".read": true,
+          ".write": true,
+          "$msgId": {
+            ".read": true,
+            ".write": true,
+            ".validate": "newData.hasChildren(['id', 'conversationId', 'senderId', 'message', 'timestamp'])",
+            "id": { ".validate": "newData.isString()" },
+            "conversationId": { ".validate": "newData.isString()" },
+            "senderId": { ".validate": "newData.isString()" },
+            "receiverId": { ".validate": "newData.isString()" },
+            "message": { ".validate": "newData.isString()" },
+            "timestamp": { ".validate": "newData.isString()" },
+            "read": { ".validate": "newData.isBoolean()" },
+            "type": { ".validate": "newData.isString()" }
+          }
+        }
+      }
+    }
+  }
+}

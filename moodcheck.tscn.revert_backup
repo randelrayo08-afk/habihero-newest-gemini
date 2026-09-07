@@ -1,0 +1,416 @@
+[gd_scene format=3 uid="uid://1wahtlc7xdpw"]
+
+[ext_resource type="FontFile" uid="uid://dh8gtpvo4mt3o" path="res://CherryBombOne-Regular.ttf" id="1_hyu3n"]
+[ext_resource type="FontFile" uid="uid://dj4sl8s77gdhu" path="res://Poppins-Medium.ttf" id="2_ycyhj"]
+[ext_resource type="Texture2D" uid="uid://cg68i4428630w" path="res://happy-face.png" id="3_qnxyd"]
+[ext_resource type="FontFile" uid="uid://dmk3n2bih3tjs" path="res://Poppins-Black.ttf" id="4_uvoqb"]
+[ext_resource type="Texture2D" uid="uid://bcrcnkdunqlev" path="res://star (1).png" id="5_ycyhj"]
+[ext_resource type="Texture2D" uid="uid://dipbfdtkrmx1d" path="res://hearts.png" id="6_qnxyd"]
+[ext_resource type="Texture2D" uid="uid://b3lbfk46mnb84" path="res://glass.png" id="7_bomyt"]
+[ext_resource type="Texture2D" uid="uid://vibwo57g232n" path="res://cool.png" id="7_uvoqb"]
+[ext_resource type="Texture2D" uid="uid://bfgssx27n6w0q" path="res://sad-face.png" id="8_bomyt"]
+[ext_resource type="Texture2D" uid="uid://dnsg2106lofl8" path="res://sad-face (1).png" id="8_dt8di"]
+[ext_resource type="Texture2D" uid="uid://dw42flr1svspl" path="res://angry.png" id="8_whuml"]
+[ext_resource type="Texture2D" uid="uid://mup3en04ihtu" path="res://angel.png" id="10_ae6n5"]
+[ext_resource type="Script" uid="uid://74msuande2ji" path="res://moodcheck_navigation.gd" id="11_mood_nav"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bomyt"]
+load_path = "res://.godot/imported/MOOD CHECK (1).png-af397c0207179e59955412936a1a5858.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_px80n"]
+texture = SubResource("CompressedTexture2D_bomyt")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jrybv"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.36078432, 0.67058825, 0.5176471, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ae6n5"]
+texture = ExtResource("8_bomyt")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2gw87"]
+texture = ExtResource("8_whuml")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a7kkk"]
+texture = ExtResource("8_dt8di")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v1bk7"]
+texture = ExtResource("7_uvoqb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qnxyd"]
+texture = ExtResource("5_ycyhj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ycyhj"]
+texture = ExtResource("6_qnxyd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_whuml"]
+texture = ExtResource("3_qnxyd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bomyt"]
+texture = ExtResource("10_ae6n5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvoqb"]
+texture = ExtResource("7_bomyt")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3vrqe"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.93333334, 0.77254903, 0.36078432, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 6
+
+[node name="Moodcheck" type="Control" unique_id=1437234508]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("11_mood_nav")
+
+[node name="Panel" type="Panel" parent="." unique_id=2135687145]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_px80n")
+
+[node name="Label" type="Label" parent="Panel" unique_id=574815652]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -143.0
+offset_top = 69.0
+offset_right = 141.0
+offset_bottom = 218.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.24705882, 0.13725491, 0.019607844, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0.81960785)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 7
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("1_hyu3n")
+theme_override_font_sizes/font_size = 50
+text = "How are you
+"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Panel/Label" unique_id=1176667315]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 47.0
+offset_right = 314.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.3372549, 0.50980395, 0.13333334, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("1_hyu3n")
+theme_override_font_sizes/font_size = 50
+text = "feeling today?"
+
+[node name="Label2" type="Label" parent="Panel/Label" unique_id=2031081732]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -114.0
+offset_top = 124.0
+offset_right = 127.0
+offset_bottom = 167.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.24705882, 0.13725491, 0.019607844, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_constants/line_spacing = -9
+theme_override_constants/outline_size = 7
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("2_ycyhj")
+theme_override_font_sizes/font_size = 18
+text = "Choose the feeling that 
+matches you today."
+horizontal_alignment = 1
+
+[node name="WORRIED" type="Button" parent="Panel" unique_id=661095343]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 536.0
+offset_right = 199.0
+offset_bottom = 644.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="Label" type="Label" parent="Panel/WORRIED" unique_id=1841473510]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 82.0
+offset_right = 95.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Worried"
+
+[node name="Panel3" type="Panel" parent="Panel/WORRIED" unique_id=798731076]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 11.0
+offset_right = 93.0
+offset_bottom = 83.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ae6n5")
+
+[node name="ANGRY" type="Button" parent="Panel" unique_id=478708132]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 537.0
+offset_right = 458.0
+offset_bottom = 648.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="Label" type="Label" parent="Panel/ANGRY" unique_id=1973828495]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 79.0
+offset_right = 84.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Angry"
+
+[node name="Panel2" type="Panel" parent="Panel/ANGRY" unique_id=1749205341]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 11.0
+offset_right = 94.0
+offset_bottom = 87.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2gw87")
+
+[node name="SAD" type="Button" parent="Panel" unique_id=1156147196]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 535.0
+offset_right = 334.0
+offset_bottom = 647.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="Label" type="Label" parent="Panel/SAD" unique_id=142772838]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 83.0
+offset_right = 76.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Sad"
+
+[node name="Panel2" type="Panel" parent="Panel/SAD" unique_id=1914720910]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 11.0
+offset_right = 94.0
+offset_bottom = 87.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_a7kkk")
+
+[node name="PROUD" type="Button" parent="Panel" unique_id=267193104]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 405.0
+offset_right = 201.0
+offset_bottom = 520.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="Label" type="Label" parent="Panel/PROUD" unique_id=434891164]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 86.0
+offset_right = 87.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Proud"
+
+[node name="Button4" type="Panel" parent="Panel/PROUD" unique_id=147014468]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 15.0
+offset_right = 90.0
+offset_bottom = 84.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_v1bk7")
+
+[node name="EXCITED" type="Button" parent="Panel" unique_id=951119742]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 270.0
+offset_right = 326.0
+offset_bottom = 384.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="Label" type="Label" parent="Panel/EXCITED" unique_id=616519097]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 88.0
+offset_right = 93.0
+offset_bottom = 114.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Excited"
+
+[node name="Panel2" type="Panel" parent="Panel/EXCITED" unique_id=1814720912]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 11.0
+offset_right = 94.0
+offset_bottom = 87.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_qnxyd")
+
+[node name="LOVED" type="Button" parent="Panel" unique_id=388800410]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 272.0
+offset_right = 456.0
+offset_bottom = 383.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="Label" type="Label" parent="Panel/LOVED" unique_id=647038001]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 83.0
+offset_right = 89.0
+offset_bottom = 109.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Loved"
+
+[node name="Panel2" type="Panel" parent="Panel/LOVED" unique_id=1924720915]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 11.0
+offset_right = 94.0
+offset_bottom = 87.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ycyhj")
+
+[node name="HAPY" type="Button" parent="Panel" unique_id=912329832]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 271.0
+offset_right = 200.0
+offset_bottom = 385.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="Label" type="Label" parent="Panel/HAPY" unique_id=1169678109]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 84.0
+offset_right = 89.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Happy"
+
+[node name="Button" type="Panel" parent="Panel/HAPY" unique_id=577247100]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 16.0
+offset_right = 97.0
+offset_bottom = 87.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_whuml")
+
+[node name="Button2" type="Button" parent="Panel" unique_id=1193763693]
+layout_mode = 0
+offset_left = 341.0
+offset_top = 405.0
+offset_right = 458.0
+offset_bottom = 519.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="CALM" type="Panel" parent="Panel/Button2" unique_id=1658343780]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 11.0
+offset_right = 98.0
+offset_bottom = 87.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_bomyt")
+
+[node name="Label" type="Label" parent="Panel/Button2/CALM" unique_id=1988130972]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 76.0
+offset_right = 67.0
+offset_bottom = 102.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Calm"
+
+[node name="CURIOUS" type="Button" parent="Panel" unique_id=451564460]
+layout_mode = 0
+offset_left = 212.0
+offset_top = 405.0
+offset_right = 326.0
+offset_bottom = 519.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jrybv")
+
+[node name="Label" type="Label" parent="Panel/CURIOUS" unique_id=328424508]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 87.0
+offset_right = 97.0
+offset_bottom = 113.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_fonts/font = ExtResource("4_uvoqb")
+theme_override_font_sizes/font_size = 18
+text = "Curious"
+
+[node name="Panel2" type="Panel" parent="Panel/CURIOUS" unique_id=1964720919]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 11.0
+offset_right = 94.0
+offset_bottom = 87.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_uvoqb")
+
+[node name="Button3" type="Button" parent="." unique_id=273583797]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -142.0
+offset_top = -111.0
+offset_right = 145.0
+offset_bottom = -51.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_hyu3n")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_3vrqe")
+text = "Continue"

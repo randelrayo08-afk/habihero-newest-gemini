@@ -1,0 +1,391 @@
+[gd_scene format=3 uid="uid://d4gyhliwcy6gd"]
+
+[ext_resource type="Texture2D" uid="uid://bc5708bh5jiju" path="res://TERMS AND CONDITION.png" id="1_3i8tc"]
+[ext_resource type="Texture2D" uid="uid://g2tbe3185ufg" path="res://back.png" id="2_i4j2f"]
+[ext_resource type="Texture2D" uid="uid://fe2bxoyy14si" path="res://remove.png" id="3_3n0aq"]
+[ext_resource type="FontFile" uid="uid://dh8gtpvo4mt3o" path="res://CherryBombOne-Regular.ttf" id="4_rlehg"]
+[ext_resource type="FontFile" uid="uid://b3oeqhmov57wi" path="res://Poppins-Bold.ttf" id="5_51i2o"]
+[ext_resource type="Texture2D" uid="uid://d2ja44g3sod4o" path="res://ask.png" id="6_k1llu"]
+[ext_resource type="Texture2D" uid="uid://cdu2u75bueunk" path="res://message.png" id="7_wjlxa"]
+[ext_resource type="Texture2D" uid="uid://bd3s3tgibn0vn" path="res://school.png" id="8_es68p"]
+[ext_resource type="Texture2D" uid="uid://dk0cjfi2cvs21" path="res://volume.png" id="9_oa2nt"]
+[ext_resource type="FontFile" uid="uid://dmk3n2bih3tjs" path="res://Poppins-Black.ttf" id="10_y0dfl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wcjg5"]
+texture = ExtResource("1_3i8tc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_71jbo"]
+texture = ExtResource("2_i4j2f")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f7jul"]
+texture = ExtResource("3_3n0aq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y053v"]
+bg_color = Color(0.9372549, 0.78431374, 0.5254902, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0, 0, 0, 0.8)
+shadow_size = 3
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f3psa"]
+texture = ExtResource("6_k1llu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yq0rh"]
+texture = ExtResource("7_wjlxa")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vh0eb"]
+texture = ExtResource("8_es68p")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fat37"]
+texture = ExtResource("9_oa2nt")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xwsjg"]
+bg_color = Color(0.1882353, 0.42352942, 0.011764706, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4mp62"]
+bg_color = Color(0.40784314, 0.24313726, 0.4, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="helpsupport" type="Control" unique_id=411864912]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="." unique_id=564393420]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_wcjg5")
+
+[node name="Button" type="Button" parent="Panel2" unique_id=1676592721]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 63.0
+offset_bottom = 73.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_71jbo")
+
+[node name="Button" type="Button" parent="Panel2/Button" unique_id=763155779]
+layout_mode = 0
+offset_left = 449.0
+offset_top = -1.0
+offset_right = 498.0
+offset_bottom = 46.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_f7jul")
+
+[node name="Label" type="Label" parent="Panel2" unique_id=494965217]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -106.0
+offset_top = 4.0
+offset_right = 114.0
+offset_bottom = 63.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("4_rlehg")
+theme_override_font_sizes/font_size = 38
+text = "Help & Support"
+horizontal_alignment = 1
+
+[node name="Panel3" type="Panel" parent="Panel2" unique_id=401893184]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 90.0
+offset_right = 448.0
+offset_bottom = 190.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y053v")
+
+[node name="Label" type="Label" parent="Panel2/Panel3" unique_id=2049377814]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 44.0
+offset_right = 370.0
+offset_bottom = 93.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "If you have questions or experience any problems while 
+using HabiHero, don't worry—we're happy to assist you."
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Panel2/Panel3/Label" unique_id=1931406886]
+layout_mode = 0
+offset_left = 79.0
+offset_top = -29.0
+offset_right = 272.0
+offset_bottom = -1.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("5_51i2o")
+theme_override_font_sizes/font_size = 20
+text = "We're here to help!"
+horizontal_alignment = 1
+
+[node name="Panel4" type="Panel" parent="Panel2" unique_id=1854992082]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 235.0
+offset_right = 453.0
+offset_bottom = 503.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y053v")
+
+[node name="Label" type="Label" parent="Panel2/Panel4" unique_id=1959406231]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 34.0
+offset_right = 177.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "What is HabiHero?"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel4/Label" unique_id=975771753]
+layout_mode = 0
+offset_left = -44.0
+offset_top = -6.0
+offset_right = -12.0
+offset_bottom = 25.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f3psa")
+
+[node name="Label2" type="Label" parent="Panel2/Panel4" unique_id=1427943215]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 79.0
+offset_right = 176.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "How do I earn XP and Coins?"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel4/Label2" unique_id=528023052]
+layout_mode = 0
+offset_left = -44.0
+offset_top = -6.0
+offset_right = -12.0
+offset_bottom = 25.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f3psa")
+
+[node name="Label3" type="Label" parent="Panel2/Panel4" unique_id=624592352]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 122.0
+offset_right = 177.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "I forgot my password. What should I do?"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel4/Label3" unique_id=697466822]
+layout_mode = 0
+offset_left = -44.0
+offset_top = -6.0
+offset_right = -12.0
+offset_bottom = 25.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f3psa")
+
+[node name="Label4" type="Label" parent="Panel2/Panel4" unique_id=764695750]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 164.0
+offset_right = 214.0
+offset_bottom = 182.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "Can i change my avatar?"
+
+[node name="Panel" type="Panel" parent="Panel2/Panel4/Label4" unique_id=991194326]
+layout_mode = 0
+offset_left = -44.0
+offset_top = -6.0
+offset_right = -12.0
+offset_bottom = 25.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f3psa")
+
+[node name="Label5" type="Label" parent="Panel2/Panel4" unique_id=2114031854]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 208.0
+offset_right = 313.0
+offset_bottom = 226.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "Why can't I complete a task?"
+
+[node name="Panel" type="Panel" parent="Panel2/Panel4/Label5" unique_id=28585850]
+layout_mode = 0
+offset_left = -44.0
+offset_top = -6.0
+offset_right = -12.0
+offset_bottom = 25.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f3psa")
+
+[node name="Label6" type="Label" parent="Panel2/Panel4" unique_id=1042824947]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 243.0
+offset_right = 238.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 10
+text = "For more questions, feel free to message us!"
+
+[node name="Panel5" type="Panel" parent="Panel2" unique_id=1264436829]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 544.0
+offset_right = 454.0
+offset_bottom = 715.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y053v")
+
+[node name="Label" type="Label" parent="Panel2/Panel5" unique_id=1204031362]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 39.0
+offset_right = 240.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "habiherosupport@gmail.com"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel5/Label" unique_id=707634663]
+layout_mode = 0
+offset_left = -39.0
+offset_top = -18.0
+offset_right = -5.0
+offset_bottom = 17.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_yq0rh")
+
+[node name="Label" type="Label" parent="Panel2/Panel5/Label" unique_id=1304017406]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 44.0
+offset_right = 117.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_font_sizes/font_size = 13
+text = "Pasig Catholic College"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel5/Label/Label" unique_id=1985990608]
+layout_mode = 0
+offset_left = -40.0
+offset_top = -20.0
+offset_right = -5.0
+offset_bottom = 14.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_vh0eb")
+
+[node name="Label" type="Label" parent="Panel2/Panel5/Label/Label" unique_id=146580732]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 42.0
+offset_right = 240.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 13
+text = "Tell us about bugs or issues so we can 
+improve HabiHero."
+
+[node name="Panel" type="Panel" parent="Panel2/Panel5/Label/Label/Label" unique_id=326050722]
+layout_mode = 0
+offset_left = -39.0
+offset_top = -12.0
+offset_right = -8.0
+offset_bottom = 18.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fat37")
+
+[node name="Label4" type="Label" parent="Panel2/Panel5/Label/Label" unique_id=1666959551]
+layout_mode = 0
+offset_top = -17.0
+offset_right = 39.0
+offset_bottom = 2.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("10_y0dfl")
+theme_override_font_sizes/font_size = 13
+text = "School"
+
+[node name="Label4" type="Label" parent="Panel2/Panel5" unique_id=769466029]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 24.0
+offset_right = 209.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("10_y0dfl")
+theme_override_font_sizes/font_size = 13
+text = "Email"
+
+[node name="Panel" type="Panel" parent="Panel2/Panel5" unique_id=2035062890]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -21.0
+offset_right = 124.0
+offset_bottom = 16.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xwsjg")
+
+[node name="Label" type="Label" parent="Panel2/Panel5/Panel" unique_id=550957123]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 114.0
+offset_bottom = 42.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_rlehg")
+theme_override_font_sizes/font_size = 16
+text = "CONTACT US"
+
+[node name="Label5" type="Label" parent="Panel2/Panel5" unique_id=854887659]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 109.0
+offset_right = 104.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(0.21176471, 0.14509805, 0.03529412, 1)
+theme_override_fonts/font = ExtResource("10_y0dfl")
+theme_override_font_sizes/font_size = 13
+text = "Report a Problem"
+
+[node name="Panel" type="Panel" parent="." unique_id=1482502525]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 212.0
+offset_right = 348.0
+offset_bottom = 249.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4mp62")
+
+[node name="Label" type="Label" parent="Panel" unique_id=681693653]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 267.0
+offset_bottom = 42.0
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_rlehg")
+theme_override_font_sizes/font_size = 16
+text = "FREQUENTLY ASKED QUESTIONS"

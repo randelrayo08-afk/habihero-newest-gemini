@@ -1,0 +1,315 @@
+[gd_scene format=3 uid="uid://db02la4wo2ng6"]
+
+[ext_resource type="Texture2D" uid="uid://434cpqu1od3m" path="res://VALUES (3).png" id="1_xk7jd"]
+[ext_resource type="FontFile" uid="uid://c2tnwo3myvnjv" path="res://Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="2_bqg1e"]
+[ext_resource type="FontFile" uid="uid://dih1hn4tmctwu" path="res://Poppins/Poppins-ExtraBold.ttf" id="3_0241a"]
+[ext_resource type="Texture2D" uid="uid://clc8e3w6apoih" path="res://f48382b1-61f4-487c-9560-b59e07ec8d92.png" id="4_7sl8n"]
+[ext_resource type="Texture2D" uid="uid://qecjqqwqmebc" path="res://greater-than (1).png" id="4_bqg1e"]
+[ext_resource type="FontFile" uid="uid://dg0qe1cy0fcdy" path="res://Poppins/Poppins-Regular.ttf" id="5_lkb45"]
+[ext_resource type="Texture2D" uid="uid://g2tbe3185ufg" path="res://back.png" id="6_c8h4g"]
+[ext_resource type="Script" uid="uid://bdwc336ot6l08" path="res://values_navigation.gd" id="7_vals"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gswf1"]
+texture = ExtResource("1_xk7jd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubavq"]
+bg_color = Color(0, 0, 0, 0.7019608)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5137255, 0.40784314, 0.21176471, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_676fu"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0241a"]
+texture = ExtResource("4_bqg1e")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hcoum"]
+texture = ExtResource("4_7sl8n")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x2xtj"]
+texture = ExtResource("6_c8h4g")
+
+[node name="VALUES" type="Control" unique_id=2131673938]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_vals")
+
+[node name="Panel" type="Panel" parent="." unique_id=1873844322]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_gswf1")
+
+[node name="Panel3" type="Panel" parent="Panel" unique_id=573310060]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = -21.0
+offset_right = 204.0
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="Panel3" type="Panel" parent="Panel/Panel3" unique_id=874533982]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.5
+offset_top = 62.5
+offset_right = 205.5
+offset_bottom = 215.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="ValueDescription" type="Label" parent="Panel/Panel3/Panel3" unique_id=563402522]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.5
+offset_top = -170.5
+offset_right = 161.5
+offset_bottom = -110.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0241a")
+theme_override_font_sizes/font_size = 12
+text = "Respect means treating everyone with kindness, listening carefully, and valuing others even when they are different from us."
+autowrap_mode = 3
+
+[node name="Challenge1" type="Label" parent="Panel/Panel3/Panel3" unique_id=1832267519]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 42.0
+offset_right = 377.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0241a")
+theme_override_font_sizes/font_size = 12
+text = "• Practice listening without interrupting."
+autowrap_mode = 3
+
+[node name="Challenge2" type="Label" parent="Panel/Panel3/Panel3" unique_id=580748442]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 71.0
+offset_right = 346.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0241a")
+theme_override_font_sizes/font_size = 12
+text = "• Use kind words with classmates and teachers."
+autowrap_mode = 3
+
+[node name="Challenge3" type="Label" parent="Panel/Panel3/Panel3" unique_id=1826270270]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 97.0
+offset_right = 319.0
+offset_bottom = 136.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0241a")
+theme_override_font_sizes/font_size = 12
+text = "• Include someone in a game or activity."
+autowrap_mode = 3
+
+[node name="Panel" type="Panel" parent="Panel/Panel3/Panel3" unique_id=1614838177]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -5.0
+offset_right = 204.0
+offset_bottom = 23.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_676fu")
+
+[node name="Label" type="Label" parent="Panel/Panel3/Panel3/Panel" unique_id=617320491]
+layout_mode = 0
+offset_left = 17.0
+offset_top = -5.0
+offset_right = 196.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("2_bqg1e")
+theme_override_font_sizes/font_size = 22
+text = "Today's Value"
+
+[node name="Panel4" type="Panel" parent="Panel" unique_id=2135365551]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.0
+offset_top = 265.0
+offset_right = 206.0
+offset_bottom = 387.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="Panel" type="Panel" parent="Panel/Panel4" unique_id=1965535238]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 150.0
+offset_bottom = 28.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_676fu")
+
+[node name="Label" type="Label" parent="Panel/Panel4/Panel" unique_id=650773706]
+layout_mode = 0
+offset_left = 25.0
+offset_top = -5.0
+offset_right = 130.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("2_bqg1e")
+theme_override_font_sizes/font_size = 22
+text = "Reflection"
+
+[node name="Label" type="Label" parent="Panel/Panel4" unique_id=662293664]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 50.0
+offset_right = 332.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0241a")
+theme_override_font_sizes/font_size = 15
+text = "How can you practice this value today?"
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Panel/Panel4" unique_id=1082426761]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 42.0
+offset_right = 388.0
+offset_bottom = 78.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_0241a")
+
+[node name="Panel2" type="Panel" parent="." unique_id=775745475]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -176.0
+offset_top = -166.0
+offset_right = 177.0
+offset_bottom = 317.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_hcoum")
+
+[node name="Label" type="Label" parent="Panel2" unique_id=1570644659]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.5
+offset_top = -20.5
+offset_right = 65.5
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.96862745, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("5_lkb45")
+theme_override_font_sizes/font_size = 40
+text = "VALUES"
+
+[node name="Panel3" type="Panel" parent="." unique_id=1634020016]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 120.0
+offset_right = 377.0
+offset_bottom = 179.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="Panel3" type="Panel" parent="Panel3" unique_id=1435375203]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -117.5
+offset_top = 38.5
+offset_right = 117.5
+offset_bottom = 165.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubavq")
+
+[node name="values_picture" type="TextureRect" parent="Panel3/Panel3" unique_id=302164408]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.5
+offset_top = -64.5
+offset_right = 147.5
+offset_bottom = 109.5
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="ValueTitle" type="Label" parent="Panel3" unique_id=897130225]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48100004
+anchor_top = -2.18
+anchor_right = 0.48100004
+anchor_bottom = -2.18
+offset_left = -86.95901
+offset_top = 140.62001
+offset_right = 93.04099
+offset_bottom = 185.62001
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9372549, 0.85882354, 0.2, 1)
+theme_override_fonts/font = ExtResource("5_lkb45")
+theme_override_font_sizes/font_size = 32
+text = "RESPECT"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=336140542]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 75.0
+offset_bottom = 81.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_x2xtj")

@@ -1,0 +1,940 @@
+[gd_scene format=3 uid="uid://cgk7jnu08lird"]
+
+[ext_resource type="Texture2D" uid="uid://cfc3egabdp3mi" path="res://ChatGPT Image Jul 15, 2026, 11_48_23 AM 2.png" id="1_kmuyr"]
+[ext_resource type="Texture2D" uid="uid://366fg2lcv8qj" path="res://user (1) 4.png" id="2_6f130"]
+[ext_resource type="FontFile" uid="uid://q1xwtxbsp3pu" path="res://Poppins/Poppins-Black.ttf" id="3_24tb6"]
+[ext_resource type="Texture2D" uid="uid://0vtijrs1w2lt" path="res://man.png" id="4_pv1hn"]
+[ext_resource type="Texture2D" uid="uid://cicwg6gyo5ug3" path="res://woman.png" id="5_mrvlk"]
+[ext_resource type="Texture2D" uid="uid://bdhmc0qd8yxva" path="res://user (1) 3 (1).png" id="6_ifsrg"]
+[ext_resource type="FontFile" uid="uid://dg0qe1cy0fcdy" path="res://Poppins/Poppins-Regular.ttf" id="7_kcgw8"]
+[ext_resource type="Texture2D" uid="uid://cxsug4vddcas4" path="res://laughing.png" id="8_60yuk"]
+[ext_resource type="Texture2D" uid="uid://1uxslf3deldr" path="res://happy.png" id="9_vadn0"]
+[ext_resource type="Texture2D" uid="uid://dv5xdyhh65b48" path="res://star.png" id="10_nokes"]
+[ext_resource type="Texture2D" uid="uid://cg1q36ayjevrc" path="res://board-game.png" id="11_ukkov"]
+[ext_resource type="Texture2D" uid="uid://cxuut6jkm2vt5" path="res://in-love.png" id="12_wffr2"]
+[ext_resource type="Texture2D" uid="uid://dw6x5t7ib1tgg" path="res://basketball.png" id="13_trc0a"]
+[ext_resource type="Texture2D" uid="uid://cibitl75inqnx" path="res://open-book (1).png" id="14_6jijk"]
+[ext_resource type="Texture2D" uid="uid://cnt302yanr6nr" path="res://canvas.png" id="15_86r6p"]
+[ext_resource type="Texture2D" uid="uid://6wg2jt64fyij" path="res://family.png" id="16_q81ww"]
+[ext_resource type="Texture2D" uid="uid://dhf0xjs1e7pic" path="res://menu.png" id="17_fp6vs"]
+[ext_resource type="FontFile" uid="uid://c2tnwo3myvnjv" path="res://Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="18_sr825"]
+[ext_resource type="FontFile" uid="uid://dixvgvwduvskp" path="res://Poppins/Poppins-Regular.ttf" id="19_jl81t"]
+[ext_resource type="FontFile" uid="uid://25vk7fvuq4rs" path="res://Poppins/Poppins-Bold.ttf" id="20_henvf"]
+[ext_resource type="FontFile" uid="uid://2erdk15xd3fn" path="res://Baloo_2/Baloo2-VariableFont_wght.ttf" id="21_6f130"]
+[ext_resource type="Texture2D" uid="uid://fe2bxoyy14si" path="res://remove.png" id="22_24tb6"]
+[ext_resource type="Script" uid="uid://dmnikafi8t2w7" path="res://popup_question.gd" id="23_popup"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xfcht"]
+texture = ExtResource("1_kmuyr")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hhu8q"]
+bg_color = Color(1, 1, 1, 0.74509805)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0.07058824, 0.07058824, 0.07058824, 0.7647059)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_10tt3"]
+texture = ExtResource("2_6f130")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_chmpd"]
+bg_color = Color(0.6117647, 0.76862746, 0.8666667, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.15294118, 0.23137255, 0.37254903, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m34vn"]
+bg_color = Color(0.94509804, 0.7372549, 0.7372549, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.5568628, 0.26666668, 0.3372549, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kwlq7"]
+texture = ExtResource("4_pv1hn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_807cb"]
+texture = ExtResource("5_mrvlk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_00nyk"]
+texture = ExtResource("6_ifsrg")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_teieg"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.36847892, 0.368479, 0.36847875, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.19215687)
+shadow_size = 1
+shadow_offset = Vector2(1, 2)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2qa12"]
+texture = ExtResource("8_60yuk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iltj0"]
+texture = ExtResource("9_vadn0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_epcrr"]
+texture = ExtResource("10_nokes")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i6inf"]
+texture = ExtResource("11_ukkov")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o2g6o"]
+texture = ExtResource("12_wffr2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n3ehg"]
+texture = ExtResource("13_trc0a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xcpg8"]
+texture = ExtResource("14_6jijk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6dg1y"]
+texture = ExtResource("15_86r6p")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_faux4"]
+texture = ExtResource("16_q81ww")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g0euj"]
+texture = ExtResource("17_fp6vs")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gu4fs"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kprc4"]
+bg_color = Color(0, 0, 0, 0.7019608)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kmuyr"]
+bg_color = Color(0.9764706, 0.92156863, 0.8156863, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8901961, 0.7529412, 0.39607844, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f130"]
+bg_color = Color(0.09019608, 0.36862746, 0.6431373, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.078431375, 0.16078432, 0.38039216, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_24tb6"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.29411766, 0.65882355, 0.8745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pv1hn"]
+bg_color = Color(0.7607843, 0.019607844, 0.019607844, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0, 0, 0, 0.25882354)
+shadow_size = 1
+shadow_offset = Vector2(1, 2)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pv1hn"]
+texture = ExtResource("22_24tb6")
+
+[node name="popupQuestion" type="Control" unique_id=1728079175]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("23_popup")
+
+[node name="Panel" type="Panel" parent="." unique_id=684698689]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xfcht")
+
+[node name="Panel" type="Panel" parent="Panel" unique_id=1269017720]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 205.0
+offset_right = 467.0
+offset_bottom = 399.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hhu8q")
+
+[node name="Panel3" type="Panel" parent="Panel/Panel" unique_id=307168588]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 207.0
+offset_right = 408.0
+offset_bottom = 472.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hhu8q")
+
+[node name="Panel" type="Panel" parent="Panel/Panel/Panel3" unique_id=1690996469]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 20.0
+offset_right = 77.0
+offset_bottom = 70.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_10tt3")
+
+[node name="Label" type="Label" parent="Panel/Panel/Panel3" unique_id=1696670743]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 26.0
+offset_right = 360.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("3_24tb6")
+theme_override_font_sizes/font_size = 27
+text = "What is your gender?"
+
+[node name="Panel2" type="Panel" parent="Panel/Panel/Panel3" unique_id=990017552]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 86.0
+offset_right = 198.0
+offset_bottom = 247.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_chmpd")
+
+[node name="Panel2" type="Panel" parent="Panel/Panel/Panel3/Panel2" unique_id=131796092]
+layout_mode = 0
+offset_left = 190.0
+offset_top = -1.0
+offset_right = 357.0
+offset_bottom = 162.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_m34vn")
+
+[node name="Panel" type="Panel" parent="Panel/Panel/Panel3/Panel2" unique_id=2111895717]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 8.0
+offset_right = 140.0
+offset_bottom = 122.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_kwlq7")
+
+[node name="Panel" type="Panel" parent="Panel/Panel/Panel3/Panel2/Panel" unique_id=966247677]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -1.0
+offset_right = 307.0
+offset_bottom = 113.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_807cb")
+
+[node name="Panel2" type="Panel" parent="." unique_id=1544079518]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xfcht")
+
+[node name="Panel" type="Panel" parent="Panel2" unique_id=1243388284]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 198.0
+offset_right = 467.0
+offset_bottom = 415.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hhu8q")
+
+[node name="Panel" type="Panel" parent="Panel2/Panel" unique_id=2005689461]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 13.0
+offset_right = 64.0
+offset_bottom = 63.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_00nyk")
+
+[node name="Label" type="Label" parent="Panel2/Panel" unique_id=1719123725]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 5.0
+offset_right = 399.0
+offset_bottom = 49.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("3_24tb6")
+theme_override_font_sizes/font_size = 23
+text = "What do you like to do?"
+
+[node name="Label" type="Label" parent="Panel2/Panel/Label" unique_id=1987900300]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 31.0
+offset_right = 328.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("3_24tb6")
+theme_override_font_sizes/font_size = 13
+text = "Choose all that you like."
+
+[node name="Panel3" type="Panel" parent="Panel2/Panel" unique_id=6399510]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 224.0
+offset_right = 412.0
+offset_bottom = 489.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hhu8q")
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Panel3" unique_id=1549071888]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 22.0
+offset_right = 70.0
+offset_bottom = 72.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_10tt3")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Panel3" unique_id=3685631]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 19.0
+offset_right = 365.0
+offset_bottom = 86.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("3_24tb6")
+theme_override_font_sizes/font_size = 22
+text = "How will you begin your 
+"
+
+[node name="Label" type="Label" parent="Panel2/Panel/Panel3/Label" unique_id=73119478]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 26.0
+offset_right = 230.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("3_24tb6")
+theme_override_font_sizes/font_size = 22
+text = "adventure today?"
+
+[node name="Button2" type="Button" parent="Panel2/Panel/Panel3" unique_id=487070048]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 84.0
+offset_right = 172.0
+offset_bottom = 161.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Panel3/Button2" unique_id=1322554834]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 58.0
+offset_right = 55.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Happy"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Panel3/Button2" unique_id=1451863110]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 9.0
+offset_right = 63.0
+offset_bottom = 60.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_2qa12")
+
+[node name="Button3" type="Button" parent="Panel2/Panel/Panel3" unique_id=1280271044]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.5
+offset_top = 42.5
+offset_right = -33.5
+offset_bottom = 119.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Panel3/Button3" unique_id=1504187388]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 56.0
+offset_right = 53.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Calm"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Panel3/Button3" unique_id=825481872]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 10.0
+offset_right = 61.0
+offset_bottom = 54.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_iltj0")
+
+[node name="Button4" type="Button" parent="Panel2/Panel/Panel3" unique_id=1509390736]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 84.0
+offset_right = 291.0
+offset_bottom = 161.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Panel3/Button4" unique_id=129342486]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 58.0
+offset_right = 55.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Happy"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Panel3/Button4" unique_id=255660359]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 9.0
+offset_right = 63.0
+offset_bottom = 60.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_epcrr")
+
+[node name="Button" type="Button" parent="Panel2/Panel/Panel3/Button4" unique_id=1373392644]
+layout_mode = 0
+offset_left = -129.0
+offset_top = -241.0
+offset_right = -56.0
+offset_bottom = -173.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Panel3/Button4/Button" unique_id=1019368570]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 45.0
+offset_right = 68.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Play Games /"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Panel2/Panel/Panel3/Button4/Button/Label" unique_id=1009120180]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -15.5
+offset_top = -5.0
+offset_right = 15.5
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Sports"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Panel3/Button4/Button" unique_id=1818218107]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 7.0
+offset_right = 57.0
+offset_bottom = 32.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_i6inf")
+
+[node name="Button5" type="Button" parent="Panel2/Panel/Panel3" unique_id=1252004921]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 175.0
+offset_right = 292.0
+offset_bottom = 252.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Panel3/Button5" unique_id=1237778011]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 58.0
+offset_right = 55.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Loved"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Panel3/Button5" unique_id=998920592]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 9.0
+offset_right = 63.0
+offset_bottom = 60.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_o2g6o")
+
+[node name="Panel2" type="Panel" parent="Panel2/Panel" unique_id=1081190179]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 85.0
+offset_right = 125.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_n3ehg")
+
+[node name="Button2" type="Button" parent="Panel2/Panel" unique_id=1803962814]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 142.0
+offset_right = 156.0
+offset_bottom = 210.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Button2" unique_id=867463424]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 49.0
+offset_right = 69.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Sing or Dance"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Button2" unique_id=2040754697]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 13.0
+offset_right = 57.0
+offset_bottom = 46.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_iltj0")
+
+[node name="Button3" type="Button" parent="Panel2/Panel" unique_id=542886971]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.0
+offset_top = -42.5
+offset_right = 37.0
+offset_bottom = 25.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Button3" unique_id=945576521]
+layout_mode = 0
+offset_left = 6.5
+offset_top = 52.0
+offset_right = 69.5
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Read Books"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Button3" unique_id=555749920]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -24.0
+offset_right = 18.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xcpg8")
+
+[node name="Button4" type="Button" parent="Panel2/Panel" unique_id=1337671347]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 66.0
+offset_right = 330.0
+offset_bottom = 134.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Button4" unique_id=141176288]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 49.0
+offset_right = 69.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Draw / Color"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Button4" unique_id=853236705]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.5
+offset_top = -23.0
+offset_right = 17.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6dg1y")
+
+[node name="Button5" type="Button" parent="Panel2/Panel" unique_id=2049668567]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 142.0
+offset_right = 242.0
+offset_bottom = 210.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Button5" unique_id=905717750]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 45.0
+offset_right = 68.0
+offset_bottom = 59.0
+rotation = 0.0006341669
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Spend Time"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Panel2/Panel/Button5/Label" unique_id=216577715]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -15.5
+offset_top = -5.0
+offset_right = 15.5
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 0
+rotation = -0.0030668038
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "with Family"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Button5" unique_id=2008231073]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 45.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_faux4")
+
+[node name="Button6" type="Button" parent="Panel2/Panel" unique_id=807835341]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 141.0
+offset_right = 331.0
+offset_bottom = 209.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_teieg")
+
+[node name="Label" type="Label" parent="Panel2/Panel/Button6" unique_id=63781978]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 53.0
+offset_right = 69.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 9
+text = "Other"
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel2/Panel/Button6" unique_id=725222677]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 9.0
+offset_right = 60.0
+offset_bottom = 52.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_g0euj")
+
+[node name="Button" type="Button" parent="Panel2" unique_id=1299470611]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -112.0
+offset_top = -78.0
+offset_right = 111.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("18_sr825")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_gu4fs")
+text = "Finish"
+
+[node name="Label" type="Label" parent="Panel2" unique_id=37809325]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -72.0
+offset_top = 87.0
+offset_right = 97.0
+offset_bottom = 152.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.8901961, 0.6666667, 0.30588236, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.42745098)
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("19_jl81t")
+theme_override_font_sizes/font_size = 30
+text = "LET’S GET TO 
+"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Panel2/Label" unique_id=1260204428]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -83.5
+offset_top = 27.0
+offset_right = 85.5
+offset_bottom = 92.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.8901961, 0.6666667, 0.30588236, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.42745098)
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("19_jl81t")
+theme_override_font_sizes/font_size = 30
+text = "know you!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel2/Label" unique_id=1805384038]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -126.5
+offset_top = -15.0
+offset_right = 134.5
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 3
+theme_override_fonts/font = ExtResource("20_henvf")
+theme_override_font_sizes/font_size = 14
+text = "Please answer a few questions to "
+
+[node name="Label2" type="Label" parent="Panel2/Label/Label2" unique_id=1125214211]
+layout_mode = 0
+offset_left = 18.0
+offset_top = -7.0
+offset_right = 235.0
+offset_bottom = 42.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_fonts/font = ExtResource("20_henvf")
+theme_override_font_sizes/font_size = 14
+text = "
+personalize your adventure!"
+
+[node name="Panel3" type="Panel" parent="." unique_id=926314768]
+layout_mode = 0
+offset_left = -108.0
+offset_top = -112.0
+offset_right = 663.0
+offset_bottom = 901.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kprc4")
+
+[node name="Panel4" type="Panel" parent="." unique_id=792947791]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.0
+offset_top = -179.0
+offset_right = 197.0
+offset_bottom = 219.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kmuyr")
+
+[node name="Panel" type="Panel" parent="Panel4" unique_id=780256268]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -117.0
+offset_top = -26.0
+offset_right = 111.0
+offset_bottom = 56.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6f130")
+
+[node name="Label" type="Label" parent="Panel4/Panel" unique_id=991105781]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -94.5
+offset_top = -18.5
+offset_right = 94.5
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("18_sr825")
+theme_override_font_sizes/font_size = 23
+text = "TELL US MORE!"
+
+[node name="Label2" type="Label" parent="Panel4/Panel" unique_id=13021302]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -146.0
+offset_top = 65.0
+offset_right = 150.0
+offset_bottom = 106.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.19607843)
+theme_override_colors/font_outline_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("21_6f130")
+theme_override_font_sizes/font_size = 25
+text = "What else do you like to do?"
+
+[node name="Label" type="Label" parent="Panel4" unique_id=760302575]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 120.0
+offset_right = 303.0
+offset_bottom = 166.0
+theme_override_colors/font_color = Color(0.13333334, 0.20784314, 0.3529412, 1)
+theme_override_constants/line_spacing = -8
+theme_override_fonts/font = ExtResource("21_6f130")
+text = "Tell us something you enjoy 
+that isn’t on the list!"
+horizontal_alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel4" unique_id=522974130]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 176.0
+offset_right = 361.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.39879236, 0.39879325, 0.39879242, 0.6)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_24tb6")
+placeholder_text = "  Type your answer here..."
+
+[node name="Label" type="Label" parent="Panel4/TextEdit" unique_id=1754975052]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 93.0
+offset_right = 319.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(0.4, 0.4, 0.4, 0.6)
+theme_override_fonts/font = ExtResource("7_kcgw8")
+theme_override_font_sizes/font_size = 12
+text = "0/75"
+
+[node name="Button" type="Button" parent="Panel4" unique_id=113979378]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -116.0
+offset_top = -73.0
+offset_right = 117.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("18_sr825")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_pv1hn")
+text = "SUBMIT"
+
+[node name="Button2" type="Button" parent="Panel4" unique_id=1826429223]
+layout_mode = 0
+offset_left = 352.0
+offset_top = -13.0
+offset_right = 404.0
+offset_bottom = 38.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_pv1hn")
